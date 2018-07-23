@@ -97,7 +97,6 @@
     --color-light-blue: #9daccc;
     --color-dark-blue: #246;
   }
-
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option) {
     color: var(--base-color) !important;
   }
@@ -113,7 +112,6 @@
     background-color: var(--base-color) !important;
     color: var(--colorfff) !important;
   }
-
   body {
     background-color: var(--color222) !important;
     background-image: var(--bg-choice) !important;
@@ -184,7 +182,6 @@
     background: transparent !important;
     color: var(--colorddd) !important;
   }
-
   /* text color */
   h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
   .lia-browser-category-heading .board-count, a.kudos-count-link span,
@@ -205,12 +202,10 @@
   .lia-truncated-body-container {
     color: var(--colorc0c0c0) !important;
   }
-
   .lia-search-filter-bread-crumb-item a.lia-custom-event, .lia-list-slim th, .lia-list-wide td,
   .private-notes-link:before, .lia-notification-feed-page-link:before {
     color: var(--coloraaa) !important;
   }
-
   /* Borders */
   .border-top, .lia-panel, .lia-thread-reply .lia-quilt-forum-message,
   .lia-component-author-rank, .lia-button-image-kudos-count,
@@ -222,7 +217,6 @@
   .lia-list-wide, .lia-list-wide tbody > tr > td {
     border-color: var(--color333) !important;
   }
-
   /* Buttons */
   .lia-message-view-forum-message .kudos-link,
   .lia-quilt-blog-message .kudos-link,
@@ -237,7 +231,6 @@
   .lia-button-primary, .lia-button-secondary, .custom-solution-mark {
     filter: brightness(.7) !important;
   }
-
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
   .kudos-link:before, .lia-img-icon-forum-thread:before {
@@ -256,7 +249,6 @@
     background-position: center !important;
     background-color: transparent !important;
   }
-
   /* Green */
   .lia-quilt-forum-message a.lia-component-go-to-solution-link {
     background-color: var(--color-green) !important;
@@ -266,7 +258,6 @@
   .lia-accepted-solution .lia-quilt-forum-message {
     border-color: var(--color-dark-green) !important;
   }
-
   /* Blue */
   .lia-panel-status-banner-note, .lia-quilt-column-feedback .lia-component-common-widget-page-information,
   .lia-panel-feedback-banner-note, .lia-component-tag-banner, .lia-panel-feedback-inline-note {
