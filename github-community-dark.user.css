@@ -96,9 +96,10 @@
     --color-green: #163;
     --color-light-green: #55a532;
     --color-dark-green: #041;
-    --color-blue: #182030;
+    --color-blue: #4183c4;
     --color-light-blue: #9daccc;
-    --color-dark-blue: #246;
+    --color-mid-blue: #246;
+    --color-dark-blue: #182030;
     --color-transparent: transparent;
   }
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text),
@@ -140,7 +141,7 @@
   }
   .lia-list-row-float .triangletop:before,
   .lia-list-row-thread-readonly .triangletop:before {
-	border-top-color: var(--base-color) !important;
+	border-top-color: var(--color-blue) !important;
   }
   .lia-list-row-thread-solved .triangletop:before {
     border-top-color: var(--color-light-green) !important;
@@ -275,8 +276,8 @@
   /* Blue */
   .lia-panel-status-banner-note, .lia-quilt-column-feedback .lia-component-common-widget-page-information,
   .lia-panel-feedback-banner-note, .lia-component-tag-banner, .lia-panel-feedback-inline-note {
-    background: var(--color-blue) !important;
+    background: var(--color-dark-blue) !important;
     color: var(--color-light-blue) !important;
-    border-color: var(--color-dark-blue) !important;
+    border-color: var(--color-mid-blue) !important;
   }
 }
