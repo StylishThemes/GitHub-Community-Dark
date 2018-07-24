@@ -101,8 +101,8 @@
     --color-dark-blue: #246;
     --color-transparent: transparent;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link),
-  .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle::after {
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text),
+  .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after {
     color: var(--base-color) !important;
   }
   .octicon-chevron-right, .help-link .octicon, g[fill="#0366D6"] {
