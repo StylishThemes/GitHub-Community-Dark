@@ -14,6 +14,7 @@
     "updates": "^4.0.1"
   },
   "scripts": {
+    "authors": "bash tools/authors.sh",
     "lint": "stylelint --silent --color -- *.css",
     "test": "npm run stylelint",
     "update": "updates -cu && npm install"
