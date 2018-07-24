@@ -97,7 +97,7 @@
     --color-light-blue: #9daccc;
     --color-dark-blue: #246;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option) {
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link),
     color: var(--base-color) !important;
   }
   .octicon-chevron-right, .help-link .octicon, g[fill="#0366D6"] {
@@ -250,9 +250,11 @@
     background-color: transparent !important;
   }
   /* Green */
-  .lia-quilt-forum-message a.lia-component-go-to-solution-link {
-    background-color: var(--color-green) !important;
-    border-color: var(--color-dark-green) !important;
+  .lia-quilt-forum-message a.lia-component-go-to-solution-link,
+  .lia-quilt-forum-message a.lia-component-go-to-solution-link:before,
+  .lia-component-go-to-solution-link a {
+    background-color: var(--color-dark-green) !important;
+    border-color: var(--color-green) !important;
     color: var(--color-light-green) !important;
   }
   .lia-accepted-solution .lia-quilt-forum-message {
