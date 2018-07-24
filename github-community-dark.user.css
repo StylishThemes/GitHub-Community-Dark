@@ -84,8 +84,11 @@
     --color-111: #111;
     --color-181818: #181818;
     --color-222: #222;
+    --color-282828: #282828;
     --color-333: #333;
+    --color-303030: #303030;
     --color-444: #444;
+    --color-484848: #484848;
     --color-c0c0c0: #c0c0c0;
     --color-aaa: #aaa;
     --color-ddd: #ddd;
@@ -96,6 +99,7 @@
     --color-blue: #182030;
     --color-light-blue: #9daccc;
     --color-dark-blue: #246;
+    --color-transparent: transparent;
   }
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link),
   .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle::after {
@@ -120,7 +124,7 @@
     background-origin: padding-box !important;
     background-attachment: var(--bg-attachment) !important;
     /*[[bg-options]]*/
-    color: #ddd !important;
+    color: var(--color-ddd) !important;
   }
   input, select {
     background: var(--color-111) !important;
@@ -187,7 +191,7 @@
   .lia-browser-category-heading, .lia-top-quilt > .lia-quilt-row-footer,
   .lia-component-forums-widget-board-browser-list.lia-panel .lia-panel-content,
   .lia-nav-list li > .lia-link-navigation, .lia-quilt-column-left .lia-panel-heading-bar {
-    background: transparent !important;
+    background: var(--color-transparent) !important;
     color: var(--color-ddd) !important;
   }
   /* text color */
@@ -233,8 +237,8 @@
     border-color: var(--color-333) !important;
   }
   .kudos-link:hover {
-    background: linear-gradient(#303030, #282828) !important;
-    border-color: #484848 !important;
+    background: linear-gradient(var(--color-303030), var(--color-282828)) !important;
+    border-color: var(--color-484848) !important;
   }
   .lia-button-primary, .lia-button-secondary, .custom-solution-mark {
     filter: brightness(.7) !important;
