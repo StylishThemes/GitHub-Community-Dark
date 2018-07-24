@@ -134,6 +134,13 @@
     color: var(--colorddd) !important;
     border-color: var(--color444) !important;
   }
+  .lia-list-row-float .triangletop:before,
+  .lia-list-row-thread-readonly .triangletop:before {
+	border-top-color: var(--base-color) !important;
+  }
+  .lia-list-row-thread-solved .triangletop:before {
+    border-top-color: var(--color-light-green) !important;
+  }
   .lia-quilt-row-sub-header, .lia-quilt-row-main .lia-panel-heading-bar,
   .default-menu-option, .lia-autocomplete, .lia-autocomplete-container,
   .lia-menu-dropdown-items, .lia-common-dropdown-toggle,
