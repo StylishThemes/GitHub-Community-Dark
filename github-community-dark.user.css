@@ -81,15 +81,15 @@
     --base-color: /*[[base-color]]*/;
     --bg-choice: /*[[bg-choice]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
-    --color111: #111;
-    --color181818: #181818;
-    --color222: #222;
-    --color333: #333;
-    --color444: #444;
-    --colorc0c0c0: #c0c0c0;
-    --coloraaa: #aaa;
-    --colorddd: #ddd;
-    --colorfff: #fff;
+    --color-111: #111;
+    --color-181818: #181818;
+    --color-222: #222;
+    --color-333: #333;
+    --color-444: #444;
+    --color-c0c0c0: #c0c0c0;
+    --color-aaa: #aaa;
+    --color-ddd: #ddd;
+    --color-fff: #fff;
     --color-green: #163;
     --color-light-green: #55a532;
     --color-dark-green: #041;
@@ -107,14 +107,14 @@
   /* text selection */
   ::selection {
     background-color: var(--base-color) !important;
-    color: var(--colorfff) !important;
+    color: var(--color-fff) !important;
   }
   ::-moz-selection {
     background-color: var(--base-color) !important;
-    color: var(--colorfff) !important;
+    color: var(--color-fff) !important;
   }
   body {
-    background-color: var(--color222) !important;
+    background-color: var(--color-222) !important;
     background-image: var(--bg-choice) !important;
     background-clip: border-box !important;
     background-origin: padding-box !important;
@@ -123,16 +123,16 @@
     color: #ddd !important;
   }
   input, select {
-    background: var(--color111) !important;
-    color: var(--colorddd) !important;
-    border-color: var(--color333) !important;
+    background: var(--color-111) !important;
+    color: var(--color-ddd) !important;
+    border-color: var(--color-333) !important;
   }
   pre, .lia-panel .lia-panel-content, .lia-component-quilt-header,
   .lia-quilt-forum-message, .lia-accepted-solution .lia-quilt-forum-message,
   .lia-panel-content .t-data-grid {
-    background: var(--color181818) !important;
-    color: var(--colorddd) !important;
-    border-color: var(--color444) !important;
+    background: var(--color-181818) !important;
+    color: var(--color-ddd) !important;
+    border-color: var(--color-444) !important;
   }
   .lia-list-row-float .triangletop:before,
   .lia-list-row-thread-readonly .triangletop:before {
@@ -152,9 +152,9 @@
   .lia-accepted-solution .lia-quilt-forum-message .lia-quilt-row-footer,
   .lia-quilt-user-profile-statistics, .lia-component-quilt-community-hero,
   .label-link, .lia-quilt-recent-posts-page .lia-message-view-wrapper {
-    background-color: var(--color222) !important;
-    color: var(--colorddd) !important;
-    border-color: var(--color444) !important;
+    background-color: var(--color-222) !important;
+    color: var(--color-ddd) !important;
+    border-color: var(--color-444) !important;
   }
   .lia-message-view-display .default-menu-option, .lia-tag-list-item,
   .lia-autocomplete > li > a:hover, .lia-autocomplete-container > li > a:hover,
@@ -173,12 +173,12 @@
   .kudos-count-link.lia-link-disabled, .KudosButton .kudos-count-link.lia-link-disabled:hover,
   .lia-search-filter-bread-crumb-item .lia-search-filter-bread-crumb-link,
   .lia-nav-list li:hover > .lia-link-navigation {
-    background: var(--color333) !important;
+    background: var(--color-333) !important;
   }
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
   .user-navigation-settings-drop-down-inner > .lia-list-standard .lia-separator,
   .user-navigation-settings-drop-down .dropdown-separator {
-    background-color: var(--color444) !important;
+    background-color: var(--color-444) !important;
   }
   .lia-panel, .lia-panel-message, .lia-message-view-display, .lia-tkb-article-summary-view,
   .lia-spoiler-container, .lia-tkb-content-finder .lia-search-tag-filter,
@@ -188,7 +188,7 @@
   .lia-component-forums-widget-board-browser-list.lia-panel .lia-panel-content,
   .lia-nav-list li > .lia-link-navigation, .lia-quilt-column-left .lia-panel-heading-bar {
     background: transparent !important;
-    color: var(--colorddd) !important;
+    color: var(--color-ddd) !important;
   }
   /* text color */
   h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
@@ -196,7 +196,7 @@
   .lia-browser-category-heading .category-title, .category-title.lia-link-disabled:hover,
   .PageTitle .lia-link-disabled:hover, .final-crumb span,
   .lia-message-view-display .lia-message-subject a.lia-link-navigation {
-    color: var(--colorddd) !important;
+    color: var(--color-ddd) !important;
   }
   .lia-component-quilt-header a, .lia-forum-topic-page-reply-count,
   .lia-autocomplete > li > a, .lia-autocomplete-container > li > a,
@@ -208,11 +208,11 @@
   .mce-tinymce-inline.mce-container > li > a, .lia-component-author-rank,
   .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover, .lia-link-disabled:focus,
   .lia-truncated-body-container {
-    color: var(--colorc0c0c0) !important;
+    color: var(--color-c0c0c0) !important;
   }
   .lia-search-filter-bread-crumb-item a.lia-custom-event, .lia-list-slim th, .lia-list-wide td,
   .private-notes-link:before, .lia-notification-feed-page-link:before {
-    color: var(--coloraaa) !important;
+    color: var(--color-aaa) !important;
   }
   /* Borders */
   .border-top, .lia-panel, .lia-thread-reply .lia-quilt-forum-message,
@@ -223,14 +223,14 @@
   .advancedSearchPanel .lia-quilt-column-right, .lia-component-search-advanced,
   .lia-component-search-filter, .lia-component-quilt-search-page-thread-filters,
   .lia-list-wide, .lia-list-wide tbody > tr > td {
-    border-color: var(--color333) !important;
+    border-color: var(--color-333) !important;
   }
   /* Buttons */
   .lia-message-view-forum-message .kudos-link,
   .lia-quilt-blog-message .kudos-link,
   .lia-quilt-blog-article-page .kudos-link {
-    background: linear-gradient(var(--color222), var(--color181818)) !important;
-    border-color: var(--color333) !important;
+    background: linear-gradient(var(--color-222), var(--color-181818)) !important;
+    border-color: var(--color-333) !important;
   }
   .kudos-link:hover {
     background: linear-gradient(#303030, #282828) !important;
