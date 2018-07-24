@@ -30,7 +30,7 @@ A userstyle extension is required, common ones include:
 
 Then:
 
-📦 [Install the usercss](https://github.com/StylishThemes/Wikipedia-Dark/raw/master/wikipedia-dark.user.css) with Stylus. Supports automatic updates.
+📦 [Install the usercss](https://github.com/StylishThemes/GitHub-Community-Dark/raw/master/github-community-dark.user.css) with Stylus. Supports automatic updates.
 
 ## Available Syntax Highlighting Themes ([Demo](https://stylishthemes.github.io/GitHub-Dark/))
 
