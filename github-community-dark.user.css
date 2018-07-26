@@ -156,7 +156,10 @@
     background: var(--color-202020) !important;
     color: var(--color-949494) !important;
   }
-  input, select {
+  input, select, .lia-content input[type="text"], .lia-content select,
+  .lia-content textarea, .lia-form-subject-input, .lia-form-tiny-mce-editor-input,
+  .lia-form-type-text, .lia-message-editor, .mce-edit-area.mce-panel,
+  .mce-form .mce-textbox, .lia-form-input-wrapper .lia-token-input-list {
     background: var(--color-111) !important;
     color: var(--color-ddd) !important;
     border-color: var(--color-333) !important;
@@ -226,6 +229,35 @@
   .lia-nav-list li > .lia-link-navigation,
   .lia-quilt-column-left .lia-panel-heading-bar {
     background: var(--color-transparent) !important;
+    color: var(--color-ddd) !important;
+  }
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > .lia-tabs-active > span > a,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > .lia-tabs-active > span > a,
+  .lia-tabs-sort > li > .lia-link-disabled,
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > .lia-tabs-active > span > a:focus,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > .lia-tabs-active > span > a:focus,
+  .lia-tabs-sort > li > .lia-link-disabled:focus,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > .lia-tabs-active > span > a:hover,
+  .lia-tabs-sort > li > .lia-link-disabled:hover {
+    background-color: var(--color-282828) !important;
+    color: var(--color-fff) !important;
+  }
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > .lia-tabs-active > span > a:hover {
+    background-color: var(--base-color) !important;
+  }
+  .lia-tabs-secondary:not(.lia-tabs-vertical), .lia-tabs-sort:not(.lia-tabs-vertical) {
+    border-bottom: 1px solid var(--color-444) !important;
+  }
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a:focus,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > li > span > a:focus,
+  .lia-tabs-sort > li > .lia-link-navigation:focus,
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a:hover,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > li > span > a:hover,
+  .lia-tabs-sort > li > .lia-link-navigation:hover {
+    background-color: var(--color-333) !important;
+  }
+  .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a,
+  .lia-tabs-sort:not(.lia-tabs-vertical) > li > span > a {
     color: var(--color-ddd) !important;
   }
   /* text color */
