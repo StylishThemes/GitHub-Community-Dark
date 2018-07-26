@@ -273,8 +273,76 @@
     background: linear-gradient(var(--color-303030), var(--color-282828)) !important;
     border-color: var(--color-484848) !important;
   }
-  .lia-button-primary, .lia-button-secondary, .custom-solution-mark {
-    filter: brightness(.7) !important;
+  .custom-solution-mark .is-solution {
+	color: var(--color-ddd) !important;
+	background-image: linear-gradient(var(--color-407045), var(--color-305530)) !important;
+  }
+  .lia-button-primary:not(.lia-button-Submit-action):not(.lia-button-Cancel-action):not(.lia-button-Reset-action),
+  .lia-button-secondary {
+    background: linear-gradient(var(--color-407045), var(--color-305530)) !important;
+    border-color: var(--color-083) !important;
+  }
+  .lia-button-primary:not(.lia-button-Submit-action):not(.lia-button-Cancel-action):not(.lia-button-Reset-action):hover,
+  .lia-button-secondary:hover {
+    background: linear-gradient(var(--color-508055), var(--color-407045)) !important;
+  }
+  .lia-button:not(input).lia-button-secondary:focus, .lia-button:not(input).lia-button-secondary.focus,
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary:focus,
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary.focus {
+    box-shadow: 0 0 0 0.2em var(--base-color-rgb) !important;
+  }
+  .lia-button:not(input).lia-button-secondary:not(.lia-action-reply),
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary {
+    color: var(--color-ddd) !important;
+    background: linear-gradient(var(--color-202020), var(--color-181818)) !important;
+    border-color: var(--color-383838) !important;
+  }
+  .lia-button:not(input).lia-button-secondary:not(.lia-action-reply):hover,
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary:hover {
+    background: linear-gradient(var(--color-303030), var(--color-282828)) !important;
+    border-color: var(--color-484848) !important;
+  }
+  .lia-button-inversed:focus, .lia-button-secondary:focus,
+  .mce-foot button:focus, .ui-dialog button:focus {
+    color: var(--color-fff) !important;
+    background-color: #79848e !important;
+    border-color: #565d65 !important;
+  }
+  .lia-button.lia-button-primary.lia-button-Submit-action {
+    background: var(--base-color) !important;
+  }
+  .lia-button.lia-button-primary.lia-button-Submit-action:hover {
+    opacity: .9;
+  }
+  .lia-button-Cancel-action.lia-button-Cancel-action:hover,
+  .lia-button-Cancel-action.lia-button-Cancel-action:focus,
+  .lia-button-Cancel-action.lia-button-Cancel-action:active,
+  .lia-button-Cancel-action.lia-button-Cancel-action.lia-link-active,
+  .lia-button-wrapper-Cancel-action:hover, .lia-button-wrapper-Cancel-action:focus,
+  .lia-button-wrapper-Cancel-action:active, .lia-button-wrapper-Cancel-action.lia-link-active,
+  .lia-button-CancelCrop-action.lia-button-CancelCrop-action:hover,
+  .lia-button-CancelCrop-action.lia-button-CancelCrop-action:focus,
+  .lia-button-CancelCrop-action.lia-button-CancelCrop-action:active,
+  .lia-button-CancelCrop-action.lia-button-CancelCrop-action.lia-link-active,
+  .lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action:hover,
+  .lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action:focus,
+  .lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action:active,
+  .lia-button-confirmation-cancel-action.lia-button-confirmation-cancel-action.lia-link-active,
+  .lia-button-Reset-action.lia-button-Reset-action:hover,
+  .lia-button-Reset-action.lia-button-Reset-action:focus,
+  .lia-button-Reset-action.lia-button-Reset-action:active,
+  .lia-button-Reset-action.lia-button-Reset-action.lia-link-active,
+  .lia-button-secondary.lia-button-content-finder-done:hover,
+  .lia-button-secondary.lia-button-content-finder-done:focus,
+  .lia-button-secondary.lia-button-content-finder-done:active,
+  .lia-button-secondary.lia-button-content-finder-done.lia-link-active {
+    background-color: var(--color-transparent) !important;
+    color: var(--base-color) !important;
+  }
+  .lia-button-Cancel-action.lia-button-Cancel-action,
+  .lia-button.lia-button-primary.lia-button-Reset-action {
+    background-color: var(--color-transparent) !important;
+    border: 0 !important;
   }
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
