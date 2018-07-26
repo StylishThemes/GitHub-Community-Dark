@@ -214,21 +214,24 @@
   .user-navigation-settings-drop-down .dropdown-separator {
     background-color: var(--color-444) !important;
   }
-  .lia-panel, .lia-panel-message, .lia-message-view-display, .lia-tkb-article-summary-view,
-  .lia-spoiler-container, .lia-tkb-content-finder .lia-search-tag-filter,
-  .lia-quilt-search-page > .lia-quilt-row-main, .lia-quilt-row-header, .lia-quilt-row-main,
-  .lia-quilt-column-alley-single, .lia-tabs-standard-wrapper > .lia-tabs-standard,
-  .lia-browser-category-heading, .lia-top-quilt > .lia-quilt-row-footer,
+  .lia-panel, .lia-panel-message, .lia-message-view-display,
+  .lia-tkb-article-summary-view, .lia-spoiler-container,
+  .lia-tkb-content-finder .lia-search-tag-filter,
+  .lia-quilt-search-page > .lia-quilt-row-main, .lia-quilt-row-header,
+  .lia-quilt-row-main, .lia-quilt-column-alley-single,
+  .lia-tabs-standard-wrapper > .lia-tabs-standard, .lia-browser-category-heading,
+  .lia-top-quilt > .lia-quilt-row-footer,
   .lia-component-forums-widget-board-browser-list.lia-panel .lia-panel-content,
-  .lia-nav-list li > .lia-link-navigation, .lia-quilt-column-left .lia-panel-heading-bar {
+  .lia-nav-list li > .lia-link-navigation,
+  .lia-quilt-column-left .lia-panel-heading-bar {
     background: var(--color-transparent) !important;
     color: var(--color-ddd) !important;
   }
   /* text color */
   h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
   .lia-browser-category-heading .board-count, a.kudos-count-link span,
-  .lia-browser-category-heading .category-title, .category-title.lia-link-disabled:hover,
-  .PageTitle .lia-link-disabled:hover, .final-crumb span,
+  .lia-browser-category-heading .category-title, .final-crumb span,
+  .category-title.lia-link-disabled:hover, .PageTitle .lia-link-disabled:hover,
   .lia-message-view-display .lia-message-subject a.lia-link-navigation,
   .lia-tabs-standard > li > span > a {
     color: var(--color-ddd) !important;
@@ -241,8 +244,9 @@
   .lia-metadata-application-tool-panel > li > a,
   .lia-search-typeahead .dropdown-menu > li > a,
   .mce-tinymce-inline.mce-container > li > a, .lia-component-author-rank,
-  .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover, .lia-link-disabled:focus,
-  .lia-truncated-body-container, .lia-content .xsmall-text {
+  .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover,
+  .lia-link-disabled:focus, .lia-truncated-body-container,
+  .lia-content .xsmall-text {
     color: var(--color-c0c0c0) !important;
   }
   .lia-search-filter-bread-crumb-item a.lia-custom-event, .lia-list-slim th, .lia-list-wide td,
@@ -302,8 +306,10 @@
   .lia-button-secondary:hover {
     background: linear-gradient(var(--color-508055), var(--color-407045)) !important;
   }
-  .lia-button:not(input).lia-button-secondary:focus, .lia-button:not(input).lia-button-secondary.focus,
-  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary:focus,
+  .lia-button:not(input).lia-button-secondary:focus,
+  .lia-button:not(input).lia-button-secondary.focus,
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action
+  .lia-button-primary.lia-button-secondary:focus,
   .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary.focus {
     box-shadow: 0 0 0 0.2em var(--base-color-rgb) !important;
   }
@@ -390,8 +396,10 @@
     border-color: var(--color-dark-green) !important;
   }
   /* Blue */
-  .lia-panel-status-banner-note, .lia-quilt-column-feedback .lia-component-common-widget-page-information,
-  .lia-panel-feedback-banner-note, .lia-component-tag-banner, .lia-panel-feedback-inline-note {
+  .lia-panel-status-banner-note,
+  .lia-quilt-column-feedback .lia-component-common-widget-page-information,
+  .lia-panel-feedback-banner-note, .lia-component-tag-banner,
+  .lia-panel-feedback-inline-note {
     background: var(--color-dark-blue) !important;
     color: var(--color-light-blue) !important;
     border-color: var(--color-mid-blue) !important;
