@@ -116,7 +116,9 @@
   }
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation),
   .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after,
-  a.page-link.lia-link-navigation {
+  a.page-link.lia-link-navigation, a.lia-link-navigation.lia-message-unread,
+  a.lia-link-navigation.lia-page-link.lia-user-name-link,
+  a.lia-link-navigation .local-friendly-date, .TagCloudTaplet .TagList a {
     color: var(--base-color) !important;
   }
   .octicon-chevron-right, .help-link .octicon, g[fill="#0366D6"] {
@@ -296,12 +298,13 @@
   .lia-message-view-media-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
   .lia-message-view-reviews-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
   .lia-message-stats-label, .lia-count-label, .lia-recent-message-count-label,
-  .lia-data-cell-secondary .lia-component-messages-column-message-replies-count,
   .lia-data-cell-secondary .lia-component-messages-column-message-views-count,
   .lia-data-cell-secondary .lia-component-messages-column-thread-replies-count,
   .lia-data-cell-secondary .lia-component-messages-column-topic-views-count,
   .lia-data-cell-secondary .lia-component-messages-column-message-kudos-count,
-  .lia-data-cell-secondary .lia-component-messages-column-contributors{
+  .lia-data-cell-secondary .lia-component-messages-column-contributors,
+  .lia-data-cell-secondary .lia-component-messages-column-message-replies-count,
+  a.lia-link-navigation.lia-replies-count-link {
     color: var(--color-aaa) !important;
   }
   /* Borders */
