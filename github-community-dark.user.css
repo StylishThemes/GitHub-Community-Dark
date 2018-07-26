@@ -102,8 +102,9 @@
     --color-dark-blue: #182030;
     --color-transparent: transparent;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text),
-  .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after {
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event),
+  .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after,
+  a.page-link.lia-link-navigation {
     color: var(--base-color) !important;
   }
   .octicon-chevron-right, .help-link .octicon, g[fill="#0366D6"] {
@@ -200,7 +201,8 @@
   .lia-browser-category-heading .board-count, a.kudos-count-link span,
   .lia-browser-category-heading .category-title, .category-title.lia-link-disabled:hover,
   .PageTitle .lia-link-disabled:hover, .final-crumb span,
-  .lia-message-view-display .lia-message-subject a.lia-link-navigation {
+  .lia-message-view-display .lia-message-subject a.lia-link-navigation,
+  .lia-tabs-standard > li > span > a {
     color: var(--color-ddd) !important;
   }
   .lia-component-quilt-header a, .lia-forum-topic-page-reply-count,
