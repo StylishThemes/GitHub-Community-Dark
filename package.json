@@ -9,13 +9,17 @@
     "node": ">=10"
   },
   "devDependencies": {
+    "fs-extra": "^7.0.0",
+    "perfectionist": "^2.4.0",
     "stylelint": "^9.3.0",
     "stylelint-config-standard": "^18.2.0",
     "updates": "^4.0.1"
   },
   "scripts": {
     "authors": "bash tools/authors.sh",
+    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "lint": "stylelint --silent --color -- *.css",
+    "perfectionist": "perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
     "test": "npm run stylelint",
     "update": "updates -cu && npm install"
   }
