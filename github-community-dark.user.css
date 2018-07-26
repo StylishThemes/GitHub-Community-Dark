@@ -376,7 +376,7 @@
     background-size: 22px !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-color: transparent !important;
+    background-color: var(--color-transparent) !important;
   }
   /* Green */
   .lia-quilt-forum-message a.lia-component-go-to-solution-link,
