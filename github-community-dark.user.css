@@ -140,6 +140,22 @@
     /*[[bg-options]]*/
     color: var(--color-ddd) !important;
   }
+  .PostPage .lia-breadcrumb, .ReplyPage .lia-breadcrumb,
+  .EditPage .lia-breadcrumb, .CrmSupportCasePage .lia-breadcrumb,
+  div.mce-edit-area {
+    background-color: var(--color-222) !important;
+  }
+  .lia-message-editor, .mce-edit-area.mce-panel, .mce-form .mce-textbox,
+  .lia-form-input-wrapper .lia-token-input-list {
+	color: var(--color-ddd) !important;
+	background-image: none !important;
+	background-color: var(--color-181818) !important;
+	border: 1px solid var(--color-333) !important;
+  }
+  .mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+    background: var(--color-202020) !important;
+    color: var(--color-949494) !important;
+  }
   input, select {
     background: var(--color-111) !important;
     color: var(--color-ddd) !important;
