@@ -79,23 +79,35 @@
 @-moz-document domain("github.community") {
   :root {
     --base-color: /*[[base-color]]*/;
+    --base-color-rgb: rgba(/*[[base-color-rgb]]*/, .2);
     --bg-choice: /*[[bg-choice]]*/;
     --bg-attachment: /*[[bg-attachment]]*/;
     --color-111: #111;
     --color-181818: #181818;
     --color-222: #222;
+    --color-202020: #202020;
     --color-282828: #282828;
     --color-333: #333;
     --color-303030: #303030;
+    --color-383838: #383838;
     --color-444: #444;
     --color-484848: #484848;
+    --color-949494: #949494;
     --color-c0c0c0: #c0c0c0;
     --color-aaa: #aaa;
     --color-ddd: #ddd;
     --color-fff: #fff;
+    --color-407045: #407045;
+    --color-305530: #305530;
+    --color-508055: #508055;
+    --color-083: #083;
     --color-green: #163;
     --color-light-green: #55a532;
     --color-dark-green: #041;
+    --color-dark-red: #300;
+    --color-bright-red: #f44;
+    --color-261d08: #261d08;
+    --color-542: #542;
     --color-blue: #4183c4;
     --color-light-blue: #9daccc;
     --color-mid-blue: #246;
