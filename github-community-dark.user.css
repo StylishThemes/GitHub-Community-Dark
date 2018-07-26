@@ -226,11 +226,29 @@
   .lia-search-typeahead .dropdown-menu > li > a,
   .mce-tinymce-inline.mce-container > li > a, .lia-component-author-rank,
   .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover, .lia-link-disabled:focus,
-  .lia-truncated-body-container {
+  .lia-truncated-body-container, .lia-content .xsmall-text {
     color: var(--color-c0c0c0) !important;
   }
   .lia-search-filter-bread-crumb-item a.lia-custom-event, .lia-list-slim th, .lia-list-wide td,
-  .private-notes-link:before, .lia-notification-feed-page-link:before {
+  .private-notes-link:before, .lia-notification-feed-page-link:before,
+  .lia-message-view-forum-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-group-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-group-topic-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-blog-topic-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-blog-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-blog-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-idea-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-contest-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-tkb-reply-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-media-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-view-reviews-message.lia-message-view-display .lia-quilt-row-header .lia-message-post-date,
+  .lia-message-stats-label, .lia-count-label, .lia-recent-message-count-label,
+  .lia-data-cell-secondary .lia-component-messages-column-message-replies-count,
+  .lia-data-cell-secondary .lia-component-messages-column-message-views-count,
+  .lia-data-cell-secondary .lia-component-messages-column-thread-replies-count,
+  .lia-data-cell-secondary .lia-component-messages-column-topic-views-count,
+  .lia-data-cell-secondary .lia-component-messages-column-message-kudos-count,
+  .lia-data-cell-secondary .lia-component-messages-column-contributors{
     color: var(--color-aaa) !important;
   }
   /* Borders */
