@@ -114,7 +114,7 @@
     --color-dark-blue: #182030;
     --color-transparent: transparent;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event),
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation),
   .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after,
   a.page-link.lia-link-navigation {
     color: var(--base-color) !important;
@@ -206,7 +206,8 @@
   .mce-tinymce-inline.mce-container > li > a:focus, .kudos-count-link,
   .kudos-count-link.lia-link-disabled, .KudosButton .kudos-count-link.lia-link-disabled:hover,
   .lia-search-filter-bread-crumb-item .lia-search-filter-bread-crumb-link,
-  .lia-nav-list li:hover > .lia-link-navigation {
+  .lia-nav-list li:hover > .lia-link-navigation,
+  .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation:hover {
     background: var(--color-333) !important;
   }
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
@@ -383,6 +384,13 @@
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-color: var(--color-transparent) !important;
+  }
+  .lia-menu-user-dropdown .view-profile-link::before, .lia-slide-menu-content .view-profile-link::before {
+    color: var(--color-949494) !important;
+  }
+  .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation {
+    border-bottom: 1px solid var(--color-444) !important;
+    color: var(--color-ddd) !important;
   }
   /* Green */
   .lia-quilt-forum-message a.lia-component-go-to-solution-link,
