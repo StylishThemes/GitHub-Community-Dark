@@ -121,7 +121,8 @@
   a.page-link.lia-link-navigation, a.lia-link-navigation.lia-message-unread,
   a.lia-link-navigation.lia-page-link.lia-user-name-link,
   a.lia-link-navigation .local-friendly-date, .TagCloudTaplet .TagList a,
-  p a.lia-link-navigation.discussion-link, a.lia-link-navigation.lia-media-uploader-tab-list-link {
+  p a.lia-link-navigation.discussion-link,
+  a.lia-link-navigation.lia-media-uploader-tab-list-link {
     color: var(--base-color) !important;
   }
 
@@ -152,7 +153,8 @@
 
   .PostPage .lia-breadcrumb, .ReplyPage .lia-breadcrumb,
   .EditPage .lia-breadcrumb, .CrmSupportCasePage .lia-breadcrumb,
-  div.mce-edit-area, .lia-media-uploader-dialog-header, .lia-media-uploader-dialog {
+  div.mce-edit-area, .lia-media-uploader-dialog-header,
+  .lia-media-uploader-dialog {
     background-color: var(--color-222) !important;
   }
 
@@ -168,7 +170,7 @@
   }
 
   .mce-widget, .mce-reset {
-		background: var(--color-181818) !important;
+    background: var(--color-181818) !important;
     color: var(--color-949494) !important;
   }
 
@@ -194,9 +196,11 @@
   }
 
   .mce-tinymce .mce-btn .mce-carat, .mce-tinymce .mce-btn .mce-ico,
-  .mce-tinymce .mce-btn.mce-menubtn span, .ui-dialog .mce-tinymce .mce-btn .mce-carat,
-  .ui-dialog .mce-tinymce .mce-btn .mce-ico, .ui-dialog .mce-tinymce .mce-btn.mce-menubtn span,
-  .mce-widget .mce-txt, .mce-open .mce-caret, .mce-menu-item .mce-ico, .mce-menu-item .mce-text {
+  .mce-tinymce .mce-btn.mce-menubtn span,
+  .ui-dialog .mce-tinymce .mce-btn .mce-carat,
+  .ui-dialog .mce-tinymce .mce-btn .mce-ico,
+  .ui-dialog .mce-tinymce .mce-btn.mce-menubtn span, .mce-widget .mce-txt,
+  .mce-open .mce-caret, .mce-menu-item .mce-ico, .mce-menu-item .mce-text {
     color: var(--color-949494) !important;
   }
 
@@ -205,7 +209,8 @@
     background-image: none !important;
   }
 
-  .lia-ui-modal-header, .lia-body .mce-window-head, .lia-body .ui-dialog-titlebar {
+  .lia-ui-modal-header, .lia-body .mce-window-head,
+  .lia-body .ui-dialog-titlebar {
     border-bottom: 1px solid var(--color-444) !important;
   }
 
@@ -214,7 +219,7 @@
   .mce-menu-item-normal.mce-active .mce-text {
     background-color: var(--base-color) !important;
     background-image: none !important;
-    color:var(--color-fff) !important;
+    color: var(--color-fff) !important;
   }
 
   .mce-caret {
@@ -247,11 +252,12 @@
   }
 
   .lia-message-body-content .Attachments, .lia-message-body .Attachments,
-  .lia-message-editor .Attachments, .lia-note-body .Attachments, .lia-spoiler-container-editor {
+  .lia-message-editor .Attachments, .lia-note-body .Attachments,
+  .lia-spoiler-container-editor {
     background-color: var(--color-181818) !important;
     border: 1px solid var(--color-444) !important;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) !important;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05) !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05) !important;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05) !important;
   }
 
   input, select, .lia-content input[type="text"], .lia-content select,
@@ -490,6 +496,7 @@
     background: linear-gradient(var(--color-303030), var(--color-282828)) !important;
     border-color: var(--color-484848) !important;
   }
+
   /* fix this area
   .lia-panel-message .lia-button-primary:focus, .lia-panel-message .lia-action-reply.reply-action-link:focus {
     color: var(--color-fff) !important;
@@ -497,7 +504,8 @@
     border-color: rgba(0, 0, 0, 0.2) !important;
   }
   */
-  .lia-button-inversed, .lia-button-secondary:not(.lia-action-reply), .ui-dialog button {
+  .lia-button-inversed, .lia-button-secondary:not(.lia-action-reply),
+  .ui-dialog button {
     background: linear-gradient(var(--color-202020), var(--color-181818)) !important;
     border-color: var(--color-383838) !important;
     color: var(--color-fff) !important;
@@ -508,7 +516,7 @@
   .mce-widget.mce-primary.mce-abs-layout-item button {
     color: var(--color-fff) !important;
     background-color: var(--base-color) !important;
-    border-color: rgba(27, 31, 35, 0.2) !important;
+    border-color: rgba(27, 31, 35, .2) !important;
   }
 
   .mce-foot .mce-last button {
@@ -519,6 +527,7 @@
   .mce-foot .mce-primary button:hover, .mce-foot .mce-last button:hover {
     opacity: .9;
   }
+
   /* fix this button
   .lia-button-inversed:focus, .lia-button-secondary:not(.lia-action-reply):focus,
   .mce-foot button:focus, .ui-dialog button:focus {
