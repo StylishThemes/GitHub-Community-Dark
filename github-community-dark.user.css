@@ -603,13 +603,14 @@
     background-image: linear-gradient(var(--color-407045), var(--color-305530)) !important;
   }
 
-  .lia-button-primary:not(.lia-button-Submit-action):not(.lia-button-Cancel-action):not(.lia-button-Reset-action),
-  .lia-button-secondary {
+  .lia-button-primary:not(.lia-button-Cancel-action):not(.lia-button-Reset-action):not(#submitContext_0):not(#submitContext_4),
+  .lia-button-secondary,
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-primary {
     background: linear-gradient(var(--color-407045), var(--color-305530)) !important;
     border-color: var(--color-083) !important;
   }
 
-  .lia-button-primary:not(.lia-button-Submit-action):not(.lia-button-Cancel-action):not(.lia-button-Reset-action):hover,
+  .lia-button-primary:not(.lia-button-Cancel-action):not(.lia-button-Reset-action):not(#submitContext_0):not(#submitContext_4):hover,
   .lia-button-secondary:hover {
     background: linear-gradient(var(--color-508055), var(--color-407045)) !important;
   }
@@ -674,11 +675,40 @@
     border-color: #565d65 !important;
   }
   */
-  .lia-button.lia-button-primary.lia-button-Submit-action {
-    background: var(--base-color) !important;
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action:not([value="Send Invitation"]),
+  #submitContext_4.lia-button.lia-button-primary.lia-button-Submit-action {
+    color: var(--base-color) !important;
+    background-color: var(--color-transparent) !important;
+    border-color: var(--base-color) !important;
   }
 
-  .lia-button.lia-button-primary.lia-button-Submit-action:hover {
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action:active,
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action:focus,
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action:hover,
+  #submitContext_4.lia-button.lia-button-primary.lia-button-Submit-action:active,
+  #submitContext_4.lia-button.lia-button-primary.lia-button-Submit-action:focus,
+  #submitContext_4.lia-button.lia-button-primary.lia-button-Submit-action:hover,
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action[value="Send Invitation"] {
+    color: var(--color-ddd) !important;
+    background: var(--base-color) !important;
+    border-color: var(--base-color) !important;
+  }
+
+  #submitContext_1.lia-button.lia-button-primary.lia-button-Submit-action {
+    background: var(--base-color) !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #submitContext_1.lia-button.lia-button-primary.lia-button-Submit-action:active,
+  #submitContext_1.lia-button.lia-button-primary.lia-button-Submit-action:focus,
+  #submitContext_1.lia-button.lia-button-primary.lia-button-Submit-action:hover {
+    opacity: .9;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  #submitContext_0.lia-button.lia-button-primary.lia-button-Submit-action[value="Send Invitation"]:hover {
     opacity: .9;
   }
 
@@ -711,7 +741,8 @@
   }
 
   .lia-button-Cancel-action.lia-button-Cancel-action,
-  .lia-button.lia-button-primary.lia-button-Reset-action {
+  .lia-button.lia-button-primary.lia-button-Reset-action,
+  .lia-component-search-breadcrumb .lia-panel-feedback-inline-note {
     background-color: var(--color-transparent) !important;
     border: 0 !important;
   }
