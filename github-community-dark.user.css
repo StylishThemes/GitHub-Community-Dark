@@ -775,6 +775,33 @@
     filter: brightness(.8) !important;
   }
 
+  .lia-form-vertical .lia-media-image-upload-contents .lia-image-upload-icon,
+  .lia-media-uploader-header-title-wrapper .lia-fa.lia-fa-camera,
+  .lia-media-uploader-tab-list .lia-fa.lia-fa-camera,
+  .lia-fa:not(.lia-img-online), .UserSingleStatistic .lia-statistic-icon:before,
+  .lia-content .add-tag-link:before, .mce-tinymce .mce-btn .mce-carat,
+  .mce-tinymce .mce-btn .mce-ico, .mce-tinymce .mce-btn.mce-menubtn span,
+  .ui-dialog .mce-tinymce .mce-btn .mce-carat,
+  .ui-dialog .mce-tinymce .mce-btn .mce-ico,
+  .ui-dialog .mce-tinymce .mce-btn.mce-menubtn span, .mce-widget .mce-txt,
+  .mce-open .mce-caret, .mce-menu-item .mce-ico, button .mce-ico.mce-i-remove {
+    color: var(--color-949494) !important;
+  }
+
+  .lia-media-uploader-formatting-preview-text-bar {
+    background-color: var(--color-585858) !important;
+  }
+
+  .lia-media-uploader-formatting-preview-image {
+    color: var(--color-mid-blue) !important;
+  }
+
+  .mce-tinymce .mce-btn:hover .mce-ico,
+  .mce-tinymce .mce-btn.mce-menubtn:hover span,
+  button:hover .mce-ico.mce-i-remove {
+    color: var(--color-c0c0c0) !important;
+  }
+
   .lia-button-wrapper-searchForm-action .lia-button-searchForm-action,
   .lia-button-SearchPageForm-action.lia-button-SearchPageForm-action,
   .lia-component-tkb-widget-search-bar .lia-button-Submit-action,
