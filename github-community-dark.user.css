@@ -269,6 +269,8 @@
     border-top: 1px solid var(--color-444) !important;
   }
 
+  .lia-media-image-progress-bar.lia-progress-bar-animate .progress-bar {
+    background-image: linear-gradient(45deg, var(--color-222) 10%, var(--base-color) 10%, var(--base-color) 30%, var(--color-222) 30%, var(--color-222) 60%, var(--base-color) 60%, var(--base-color) 80%, var(--color-222) 80%) !important;
   }
 
   .lia-message-body-content .Attachments, .lia-message-body .Attachments,
