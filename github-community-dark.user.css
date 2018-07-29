@@ -144,6 +144,20 @@
     color: var(--color-fff) !important;
   }
 
+  .lia-content input[type="text"]::-moz-placeholder,
+  .lia-content select::-moz-placeholder, .lia-content textarea::-moz-placeholder,
+  .lia-form-subject-input::-moz-placeholder,
+  .lia-form-tiny-mce-editor-input::-moz-placeholder,
+  .lia-form-type-text::-moz-placeholder, .lia-message-editor::-moz-placeholder,
+  .mce-edit-area.mce-panel::-moz-placeholder,
+  .mce-form .mce-textbox::-moz-placeholder {
+    color: var(--color-aaa) !important;
+  }
+
+  ::placeholder {
+    color: var(--color-aaa) !important;
+  }
+
   body {
     background-color: var(--color-222) !important;
     background-image: var(--bg-choice) !important;
