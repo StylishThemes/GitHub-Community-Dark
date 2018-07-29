@@ -747,6 +747,24 @@
     border: 0 !important;
   }
 
+  /* tooltips - popovers */
+  .lia-panel-tooltip-wrapper {
+    background-color: var(--color-242424) !important;
+    border: 1px solid var(--color-444) !important;
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2) !important;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .2) !important;
+  }
+
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-bottom-left > .lia-tooltip-arrow:after,
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-bottom-right > .lia-tooltip-arrow:after {
+    border-bottom-color: var(--color-242424) !important;
+  }
+
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-bottom-left > .lia-tooltip-arrow,
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-bottom-right > .lia-tooltip-arrow {
+    border-bottom-color: var(--color-444) !important;
+  }
+
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
   .kudos-link:before, .lia-img-icon-forum-thread:before {
