@@ -125,7 +125,15 @@
   a.lia-link-navigation.lia-page-link.lia-user-name-link,
   a.lia-link-navigation .local-friendly-date, .TagCloudTaplet .TagList a,
   p a.lia-link-navigation.discussion-link,
-  a.lia-link-navigation.lia-media-uploader-tab-list-link {
+  a.lia-link-navigation.lia-media-uploader-tab-list-link,
+  a.lia-link-navigation.lia-message-board-link.lia-component-common-widget-link,
+  a.lia-link-navigation.lia-autosave-discard.lia-link-ticket-post-action,
+  a[href^="mailto"], a.lia-link-navigation.lia-kudos-count-link,
+  a.lia-link-navigation.lia-tag.tag,
+  a.lia-link-navigation.lia-replies-toggle-link, .BlogLatestArticlesTaplet a,
+  a.lia-link-navigation.lia-advanced-search-link,
+  a.lia-message-tags-title-link.lia-message-card-sub-component-header,
+  .lia-message-body-content a .lia-truncated-body-container {
     color: var(--base-color) !important;
   }
 
