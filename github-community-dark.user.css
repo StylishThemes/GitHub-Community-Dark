@@ -179,19 +179,23 @@
   .PostPage .lia-breadcrumb, .ReplyPage .lia-breadcrumb,
   .EditPage .lia-breadcrumb, .CrmSupportCasePage .lia-breadcrumb,
   div.mce-edit-area, .lia-media-uploader-dialog-header,
-  .lia-media-uploader-dialog {
+  .lia-media-uploader-dialog, .lia-quilt-column-alley .lia-panel-content {
     background-color: var(--color-222) !important;
+  }
+
+  .lia-panel .lia-panel-heading-bar {
+    background-color: var(--color-282828) !important;
   }
 
   .lia-message-editor, .mce-edit-area.mce-panel, .mce-form .mce-textbox,
   .lia-form-input-wrapper .lia-token-input-list, .mce-panel.mce-panel {
     color: var(--color-ddd) !important;
     background-image: none !important;
-    background-color: var(--color-181818) !important;
+    background-color: var(--color-transparent) !important;
   }
 
   .mce-widget, .mce-reset {
-    background: var(--color-181818) !important;
+    background: var(--color-222) !important;
     color: var(--color-949494) !important;
   }
 
@@ -199,24 +203,52 @@
     background: var(--color-333) !important;
   }
 
-  .mce-floatpanel.mce-popover, .mce-panel.mce-menu {
-    background: var(--color-181818) !important;
+  .mce-widget.mce-btn {
+    color: var(--color-fff) !important;
+  }
+
+  .lia-panel .lia-panel-heading-bar, .lia-spoiler-container .lia-spoiler-link {
+    background-color: var(--color-222) !important;
+    border-bottom: 1px solid var(--color-transparent) !important;
+    border-color: var(--color-444) !important;
+    color: var(--color-ddd) !important;
+  }
+
+  .lia-panel, .lia-panel-message, .lia-message-view-display,
+  .lia-tkb-article-summary-view, .lia-spoiler-container,
+  .lia-tkb-content-finder .lia-search-tag-filter {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05) !important;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05) !important;
+    background-color: var(--color-222) !important;
     border: 1px solid var(--color-444) !important;
   }
 
+  .lia-message-view-display, .lia-panel-message, .lia-panel {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border: 0 !important;
   }
 
+  .mce-floatpanel.mce-popover, .mce-panel.mce-menu,
+  .lia-panel .lia-panel-content .lia-list-standard, .CommentEditorForm,
+  .lia-quilt-row-main .lia-panel-heading-bar,
+  .lia-panel-standard .lia-panel-content, .lia-panel.advancedSearchPanel {
+    background: var(--color-222) !important;
+    border: 1px solid var(--color-333) !important;
   }
 
+  .lia-quilt-reply-page .lia-panel-content {
+    background: var(--color-222) !important;
+    border: 1px solid var(--color-333) !important;
   }
 
-  .mce-tinymce .mce-btn .mce-carat, .mce-tinymce .mce-btn .mce-ico,
-  .mce-tinymce .mce-btn.mce-menubtn span,
-  .ui-dialog .mce-tinymce .mce-btn .mce-carat,
-  .ui-dialog .mce-tinymce .mce-btn .mce-ico,
-  .ui-dialog .mce-tinymce .mce-btn.mce-menubtn span, .mce-widget .mce-txt,
-  .mce-open .mce-caret, .mce-menu-item .mce-ico, .mce-menu-item .mce-text {
-    color: var(--color-949494) !important;
+  .MessageView .lia-quilt-forum-message {
+    background: var(--color-transparent) !important;
+  }
+
+  div.mce-menu .mce-menu-item-sep, .mce-menu-item-sep:hover {
+    background: var(--color-444) !important;
+    border-bottom: 1px solid var(--color-444) !important;
   }
 
   .mce-panel.mce-floatpanel {
@@ -224,9 +256,9 @@
     background-image: none !important;
   }
 
-  .mce-menu-item:hover, .mce-menu-item.mce-selected, .mce-menu-item:focus,
-  .mce-menu-item:hover .mce-text, .mce-menu-item-normal.mce-active,
-  .mce-menu-item-normal.mce-active .mce-text {
+  .mce-menu-item:not(.mce-menu-item-sep):hover, .mce-menu-item.mce-selected,
+  .mce-menu-item:focus, .mce-menu-item:hover .mce-text,
+  .mce-menu-item-normal.mce-active, .mce-menu-item-normal.mce-active .mce-text {
     background-color: var(--base-color) !important;
     background-image: none !important;
     color: var(--color-fff) !important;
@@ -258,8 +290,8 @@
     border-color: var(--color-333) !important;
   }
 
-  pre, .lia-panel .lia-panel-content, .lia-component-quilt-header,
-  .lia-quilt-forum-message, .lia-accepted-solution .lia-quilt-forum-message,
+  pre, .lia-component-quilt-header, .lia-quilt-forum-message,
+  .lia-accepted-solution .lia-quilt-forum-message,
   .lia-panel-content .t-data-grid {
     background: var(--color-181818) !important;
     color: var(--color-ddd) !important;
@@ -267,22 +299,24 @@
   }
 
   .lia-list-row-float .triangletop:before,
-  .lia-list-row-thread-readonly .triangletop:before {
+  .lia-list-row-thread-readonly .triangletop:before,
+  .lia-message-view-display.lia-list-row-thread-readonly:before {
     border-top-color: var(--color-blue) !important;
   }
 
-  .lia-list-row-thread-solved .triangletop:before {
+  .lia-list-row-thread-solved .triangletop:before,
+  .lia-message-view-display.lia-list-row-thread-solved:before {
     border-top-color: var(--color-light-green) !important;
   }
 
-  .lia-quilt-row-sub-header, .lia-quilt-row-main .lia-panel-heading-bar,
-  .default-menu-option, .lia-autocomplete, .lia-autocomplete-container,
-  .lia-menu-dropdown-items, .lia-common-dropdown-toggle,
+  .lia-quilt-row-sub-header, .default-menu-option, .lia-autocomplete,
+  .lia-autocomplete-container, .lia-menu-dropdown-items,
+  .lia-common-dropdown-toggle,
   .user-navigation-settings-drop-down-inner > .lia-list-standard,
   .lia-common-dropdown-menu, .ui-datepicker, .lia-token-input-dropdown,
   .lia-metadata-application-tool-panel, .lia-search-typeahead .dropdown-menu,
-  .mce-tinymce-inline.mce-container, .Box, .lia-panel.advancedSearchPanel,
-  .lia-quilt-user-search-item, .t-data-grid, .lia-quilt-row-footer,
+  .mce-tinymce-inline.mce-container, .Box, .lia-quilt-user-search-item,
+  .t-data-grid, .lia-quilt-row-footer,
   .lia-accepted-solution .lia-quilt-forum-message .lia-quilt-row-footer,
   .lia-quilt-user-profile-statistics, .lia-component-quilt-community-hero,
   .label-link, .lia-quilt-recent-posts-page .lia-message-view-wrapper {
@@ -363,7 +397,8 @@
   .lia-tabs-sort > li > .lia-link-navigation:focus,
   .lia-tabs-secondary:not(.lia-tabs-vertical) > li > span > a:hover,
   .lia-tabs-sort:not(.lia-tabs-vertical) > li > span > a:hover,
-  .lia-tabs-sort > li > .lia-link-navigation:hover {
+  .lia-tabs-sort > li > .lia-link-navigation:hover,
+  .UnsavedDraftsTaplet .lia-inline-confirm {
     background-color: var(--color-333) !important;
   }
 
