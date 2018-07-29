@@ -813,8 +813,8 @@
     background-color: var(--color-transparent) !important;
   }
 
-  .lia-menu-user-dropdown .view-profile-link::before,
-  .lia-slide-menu-content .view-profile-link::before {
+  .lia-menu-user-dropdown .lia-link-navigation:before,
+  .lia-slide-menu-content .view-profile-link:before {
     color: var(--color-949494) !important;
   }
 
