@@ -842,6 +842,13 @@
     border-color: var(--color-dark-green) !important;
   }
 
+  .lia-img-icon-accept-solution:before, .lia-img-icon-arrow-down-safe:before,
+  .lia-img-icon-arrow-up-safe:before, .lia-img-message-type-resolution:before,
+  .lia-img-message-type-resolved:before, .lia-img-message-type-solution:before,
+  .lia-img-message-type-solved:before, .lia-img-online {
+    color: var(--color-light-green) !important;
+  }
+
   /* Blue */
   .lia-panel-status-banner-note,
   .lia-quilt-column-feedback .lia-component-common-widget-page-information,
