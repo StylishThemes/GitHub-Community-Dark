@@ -430,8 +430,48 @@
   .mce-tinymce-inline.mce-container > li > a, .lia-component-author-rank,
   .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover,
   .lia-link-disabled:focus, .lia-truncated-body-container,
-  .lia-content .xsmall-text {
+  .lia-content .xsmall-text, .lia-form-validation-help-text,
+  .lia-search-advanced-instructions-wrapper div, .mce-widget:hover .mce-txt {
     color: var(--color-c0c0c0) !important;
+  }
+
+  .lia-content .add-tag-link, .mce-menu-item .mce-text {
+    color: var(--color-949494) !important;
+  }
+
+  .TagDetailPage .lia-menu-dropdown-items > li > .lia-link-disabled,
+  .TagDetailPage .user-navigation-settings-drop-down-inner > .lia-list-standard > li > .lia-link-disabled,
+  .lia-menu-dropdown-items > li > .lia-link-disabled {
+    color: var(--color-555) !important;
+  }
+
+  .lia-paging-full .lia-link-disabled,
+  .lia-paging-full-pages .lia-paging-page-ellipsis > .lia-link-disabled,
+  .lia-paging-full .lia-link-disabled:hover,
+  .lia-paging-full-pages .lia-paging-page-ellipsis > .lia-link-disabled:hover,
+  .lia-paging-full .lia-link-disabled:focus,
+  .lia-paging-full-pages .lia-paging-page-ellipsis > .lia-link-disabled:focus {
+    background-color: var(--color-transparent) !important;
+    border-color: var(--color-transparent) !important;
+    color: var(--color-aaa) !important;
+    opacity: .6 !important;
+  }
+
+  .lia-paging-full-pages li > .lia-link-disabled,
+  .lia-paging-full-pages li > .lia-link-disabled:hover,
+  .lia-paging-full-pages li > .lia-link-disabled:focus {
+    background-color: var(--color-transparent) !important;
+    border-color: var(--color-transparent) !important;
+    color: var(--color-ddd) !important;
+    font-weight: bold !important;
+    opacity: 1 !important;
+  }
+
+  .lia-paging-full > li > a, .lia-paging-full-pages > li > a,
+  .lia-paging-full > li > span, .lia-paging-full-pages > li > span {
+    color: var(--color-ddd) !important;
+    background-color: var(--color-transparent) !important;
+    border: 1px solid var(--color-transparent) !important;
   }
 
   .lia-search-filter-bread-crumb-item a.lia-custom-event, .lia-list-slim th,
