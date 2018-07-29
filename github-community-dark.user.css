@@ -182,10 +182,6 @@
     background-color: var(--color-181818) !important;
   }
 
-  .mce-colorbutton:hover .mce-open {
-    border-left-color: var(--color-444) !important;
-  }
-
   .mce-widget, .mce-reset {
     background: var(--color-181818) !important;
     color: var(--color-949494) !important;
@@ -200,16 +196,10 @@
     border: 1px solid var(--color-444) !important;
   }
 
-  .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow {
-    border-bottom-color: var(--color-444) !important;
   }
 
-  .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow:after {
-    border-bottom-color: var(--color-181818) !important;
   }
 
-  .mce-grid td.mce-grid-cell div {
-    border: 1px solid var(--color-484848) !important;
   }
 
   .mce-tinymce .mce-btn .mce-carat, .mce-tinymce .mce-btn .mce-ico,
@@ -226,11 +216,6 @@
     background-image: none !important;
   }
 
-  .lia-ui-modal-header, .lia-body .mce-window-head,
-  .lia-body .ui-dialog-titlebar {
-    border-bottom: 1px solid var(--color-444) !important;
-  }
-
   .mce-menu-item:hover, .mce-menu-item.mce-selected, .mce-menu-item:focus,
   .mce-menu-item:hover .mce-text, .mce-menu-item-normal.mce-active,
   .mce-menu-item-normal.mce-active .mce-text {
@@ -239,33 +224,11 @@
     color: var(--color-fff) !important;
   }
 
-  .mce-caret {
-    border-top: 4px solid var(--color-949494) !important;
-    border-right: 4px solid var(--color-transparent) !important;
-    border-left: 4px solid var(--color-transparent) !important;
-  }
-
   .lia-media-uploader-body-tab-content {
     background-color: var(--color-333) !important;
     border-top: 1px solid var(--color-444) !important;
   }
 
-  .lia-media-uploader-body-side-panel {
-    border-left: 1px solid var(--color-444) !important;
-    border-top: 1px solid var(--color-444) !important;
-  }
-
-  .lia-media-uploader-header-album-selector-column {
-    border-left: 1px solid var(--color-444) !important;
-    border-right: 1px solid var(--color-444) !important;
-  }
-
-  .lia-body .mce-window .mce-foot {
-    border-color: var(--color-444) !important;
-  }
-
-  .mce-foot {
-    border-top: 1px solid var(--color-444) !important;
   }
 
   .lia-message-body-content .Attachments, .lia-message-body .Attachments,
@@ -464,6 +427,79 @@
   .lia-list-wide, .lia-list-wide tbody > tr > td {
     border-color: var(--color-333) !important;
   }
+
+  .lia-quilt-blog-message > .lia-quilt-row-header,
+  .lia-quilt-blog-topic-message > .lia-quilt-row-header {
+    border-bottom: 1px solid var(--color-333) !important;
+  }
+
+  .lia-panel-content-wrapper .lia-panel-content {
+    border-top: 0 !important;
+  }
+
+  .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow {
+    border-bottom-color: var(--color-444) !important;
+  }
+
+  .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow:after {
+    border-bottom-color: var(--color-181818) !important;
+  }
+
+  .mce-grid td.mce-grid-cell div {
+    border: 1px solid var(--color-484848) !important;
+  }
+
+  .lia-ui-modal-header, .lia-body .mce-window-head,
+  .lia-body .ui-dialog-titlebar {
+    border-bottom: 1px solid var(--color-444) !important;
+  }
+
+  .mce-caret {
+    border-top: 4px solid var(--color-949494) !important;
+    border-right: 4px solid var(--color-transparent) !important;
+    border-left: 4px solid var(--color-transparent) !important;
+  }
+
+  .lia-media-uploader-body-side-panel {
+    border-left: 1px solid var(--color-444) !important;
+    border-top: 1px solid var(--color-444) !important;
+  }
+
+  .lia-media-uploader-header-album-selector-column {
+    border-left: 1px solid var(--color-444) !important;
+    border-right: 1px solid var(--color-444) !important;
+  }
+
+  .lia-body .mce-window .mce-foot {
+    border-color: var(--color-444) !important;
+  }
+
+  .mce-foot {
+    border-top: 1px solid var(--color-444) !important;
+  }
+
+  .mce-colorbutton .mce-open {
+    border-left: 1px solid var(--color-transparent) !important;
+  }
+
+  .mce-colorbutton:hover .mce-open {
+    border-left-color: var(--color-444) !important;
+  }
+
+  /* these will show up sometime comment them out for now.
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-top-right > .lia-tooltip-arrow {
+    border-top-color: #c0c !important;
+  }
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-top-right > .lia-tooltip-arrow:after {
+    border-top-color: #c0c !important;
+  }
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-align-left > .lia-tooltip-arrow {
+    border-left-color: #c0c !important;
+  }
+  .lia-panel-tooltip-wrapper.lia-tooltip-pos-align-left > .lia-tooltip-arrow:after {
+    border-left-color: #fff;
+  }
+  */
 
   /* Buttons */
   .lia-message-view-forum-message .kudos-link,
