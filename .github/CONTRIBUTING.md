@@ -24,14 +24,14 @@ If you don't know CSS very well and have found a missing style, please include a
 
 * Follow the style guide below
 * Make any needed changes, then send us a pull request
-* Please include a url to the page (if public)
+* Please include a URL to the page (if public)
 
 ## Style Guide
 
 * Use the provided `.editorconfig` file with your code editor. Don't know what that is? Then check out http://editorconfig.org/.
-* Limit to the [K&R Style](https://en.wikipedia.org/wiki/Indentation_style#K.26R), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
+* Limit to the [K&R (KNF variation style)](https://en.wikipedia.org/wiki/Indentation_style#Variant:_BSD_KNF), and **2 SPACE INDENTATION** (no tabs, and not more, and not less than 2 spaces).
 
-  * K&R Example:
+  * K&R - KNF Variation Example:
     ```css
     element[attr='value'] {
     ··property: value;
@@ -68,7 +68,7 @@ If you don't know CSS very well and have found a missing style, please include a
 
 * Try to wrap lines at around 80 characters.
 * Try to limit the style size:
-  * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following url: `http://stylishthemes.github.io/GitHub-Community-Dark/images/`{my-image.png}.
+  * Don't add any image URI's to the css; instead add the image into the `/images` directory; then point to using the following URL: `http://stylishthemes.github.io/GitHub-Community-Dark/images/`{my-image.png}.
   * If possible, reduce any added selectors. Remember that Stylus requires an `!important` flag to override default styling, so a selector starting from the body isn't always necessary.
   * Don't add any inline comments. If you want to make a comment, add it as a note in the commit.
   * If your css definition already exists within the style, do not add it again! Add your selector to the existing definition.
@@ -77,7 +77,7 @@ If you don't know CSS very well and have found a missing style, please include a
 
 ## Getting Started
 
-* Download, fork or clone this repository.
+* [Download](https://github.com/StylishThemes/GitHub-Community-Dark/archive/master.zip), [fork](https://github.com/StylishThemes/GitHub-Community-Dark/fork) or clone this repository.
 * It's easiest to try out your changes within the Stylus editor.
   * The live preview option (available soon) will make it easy to see your style changes as you make them.
   * Once done, make the same changes to the `github-community-dark.user.css` file in the repo and save. It might be easiest to copy &amp; paste the entire style from the Stylus editor.
