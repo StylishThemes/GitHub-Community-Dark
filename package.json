@@ -32,6 +32,6 @@
     "stylelint": "stylelint --silent --color -- github-community-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "updates -cu && npm install",
-    "usercss": "node tools/update-usercss.js"
+    "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
   }
 }
