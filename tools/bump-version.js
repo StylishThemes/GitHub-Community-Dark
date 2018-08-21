@@ -6,6 +6,7 @@ const path = require("path");
 const semver = require("semver");
 
 const pkg = require("../package.json");
+const {exit} = require("./utils");
 
 const file = path.join(__dirname, "..", pkg.main);
 
@@ -26,10 +27,3 @@ const file = path.join(__dirname, "..", pkg.main);
     .then(() => console.log("\x1b[32m%s\x1b[0m", `${pkg.title} usercss updated`))
     .catch(exit);
 })();
-
-function exit(err) {
-  if (err) {
-    console.error(err);
-  }
-  process.exit(err ? 1 : 0);
-}

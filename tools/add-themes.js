@@ -5,6 +5,8 @@ const fs = require("fs-extra");
 const path = require("path");
 const defaults = require("../defaults.json");
 
+const {exit} = require("./utils");
+
 async function getThemesInFolder() {
   const themes = path.join(__dirname, "..", "themes");
   let files = await fs.readdir(themes);
@@ -37,11 +39,6 @@ function updateDefaults(themes) {
   const val = defaults.variables["Github syntax theme"].value = {};
   themes.forEach(theme => val[extractThemeName(theme)] = escapeSlash(theme));
   return JSON.stringify(defaults, null, 2);
-}
-
-function exit(err) {
-  if (err) console.error(err);
-  process.exit(err ? 1 : 0);
 }
 
 getThemesInFolder()

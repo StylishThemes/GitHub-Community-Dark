@@ -29,9 +29,15 @@ function pad(len, str) {
   return (str || "").padEnd(len);
 }
 
+function exit(err) {
+  if (err) console.error(err);
+  process.exit(err ? 1 : 0);
+}
+
 module.exports = {
   replaceHolders,
   escapeRegex,
   maxSize,
   pad,
+  exit,
 };

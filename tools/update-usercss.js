@@ -4,7 +4,7 @@
 const fs = require("fs-extra");
 const path = require("path");
 
-const {replaceHolders, maxSize, pad} = require("./utils");
+const {replaceHolders, exit} = require("./utils");
 const pkg = require("../package.json");
 
 const files = {
@@ -18,9 +18,6 @@ const defaults = require(files.defaults);
 function addVars(template, usercss) {
   const vars = defaults.variables;
   const keys = Object.keys(vars);
-  const typeLen = maxSize(keys.map(key => vars[key].type));
-  const labelLen = maxSize(keys.map(key => vars[key].label));
-  const keyLen = maxSize(keys.map(key => key));
   const variables = keys.map((key) => {
     const e = vars[key];
     const v = e.type !== "dropdown" ?
@@ -28,8 +25,9 @@ function addVars(template, usercss) {
       `{\n  ${Object.keys(e.value)
         .map(o => `${o} "${o}" <<<EOT\n  ${e.value[o]} EOT;`)
         .join("\n  ")}\n}`;
-    return `@advanced ${pad(typeLen, e.type)} ${pad(labelLen, e.label)} ` +
-      `"${key}"${pad(keyLen - key.length)} ${v}`;
+    return `@advanced ${e.type} ${e.label} "${key}" ` +
+      // Wrap url(...) in quotes
+      `${v.includes("url(") ? '"' + v + '"' : v}`;
   }).join("\n");
   return replaceHolders(
     pkg,
@@ -38,11 +36,6 @@ function addVars(template, usercss) {
       .replace("{{preprocessor}}", defaults.preprocessor || "uso")
       .replace("{{variables}}", variables)
   );
-}
-
-function exit(err) {
-  if (err) console.error(err);
-  process.exit(err ? 1 : 0);
 }
 
 fs.readFile(files.template, "utf8")
