@@ -551,7 +551,7 @@
   }
   .lia-button:not(input).lia-button-secondary:focus,
   .lia-button:not(input).lia-button-secondary.focus,
-  .lia-quilt-post-page .lia-button-wrapper-Submit-action
+  .lia-quilt-post-page .lia-button-wrapper-Submit-action,
   .lia-button-primary.lia-button-secondary:focus,
   .lia-quilt-post-page .lia-button-wrapper-Submit-action .lia-button-primary.lia-button-secondary.focus {
     box-shadow: 0 0 0 .2em var(--base-color-rgb) !important;
@@ -729,7 +729,7 @@
   }
   .lia-quilt-view-profile-hero {
     color: var(--color-c0c0c0) !important;
-    background: url('https://dyjpb62732.i.lithium.com/html/assets/simple-codelines.svg'),
+    background: url("https://dyjpb62732.i.lithium.com/html/assets/simple-codelines.svg"),
      var(--color-383838) !important;
   }
   .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation {
@@ -777,7 +777,7 @@
     background-color: var(--color-222) !important;
     border: 1px solid var(--color-444) !important;
   }
-  .lia-notification-rank .lia-notification-feed-icon::before {
+  .lia-notification-rank .lia-notification-feed-icon:before {
     color: var(--color-blue) !important;
   }
   .lia-notification-unread .lia-quilt-notification-feed-item {
