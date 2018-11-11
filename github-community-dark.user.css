@@ -686,7 +686,7 @@
   }
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
-  .kudos-link:before, .lia-img-icon-forum-thread:before {
+  .kudos-link:before, .lia-img-icon-forum-thread:before, .featured-event img {
     filter: invert(80%) !important;
   }
   .lia-message-image-wrapper img {
