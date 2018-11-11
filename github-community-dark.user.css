@@ -216,7 +216,8 @@
   .mce-floatpanel.mce-popover, .mce-panel.mce-menu,
   .lia-panel .lia-panel-content .lia-list-standard, .CommentEditorForm,
   .lia-quilt-row-main .lia-panel-heading-bar,
-  .lia-panel-standard .lia-panel-content, .lia-panel.advancedSearchPanel {
+  .lia-panel-standard .lia-panel-content, .lia-panel.advancedSearchPanel,
+  .featured-event {
     background: var(--color-222) !important;
     border: 1px solid var(--color-333) !important;
   }
@@ -319,7 +320,8 @@
   .KudosButton .kudos-count-link.lia-link-disabled:hover,
   .lia-search-filter-bread-crumb-item .lia-search-filter-bread-crumb-link,
   .lia-nav-list li:hover > .lia-link-navigation,
-  .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation:hover {
+  .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation:hover,
+  .featured-event:hover {
     background: var(--color-333) !important;
   }
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
