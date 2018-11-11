@@ -659,7 +659,8 @@
   .lia-button-secondary.lia-button-content-finder-done:hover,
   .lia-button-secondary.lia-button-content-finder-done:focus,
   .lia-button-secondary.lia-button-content-finder-done:active,
-  .lia-button-secondary.lia-button-content-finder-done.lia-link-active {
+  .lia-button-secondary.lia-button-content-finder-done.lia-link-active,
+  .CommunityPage .lia-quilt-row-feedback {
     background-color: var(--color-transparent) !important;
     color: var(--base-color) !important;
   }
