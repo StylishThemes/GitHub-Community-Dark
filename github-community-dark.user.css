@@ -133,7 +133,10 @@
   a.lia-link-navigation.lia-replies-toggle-link, .BlogLatestArticlesTaplet a,
   a.lia-link-navigation.lia-advanced-search-link,
   a.lia-message-tags-title-link.lia-message-card-sub-component-header,
-  .lia-message-body-content a .lia-truncated-body-container {
+  .lia-message-body-content a .lia-truncated-body-container,
+  a.lia-link-navigation.lia-component-forums-widget-community-node-tree-item,
+  a.lia-link-navigation.user-tag-count-link, a.lia-link-navigation span.DateTime,
+  a[id*="link_"].lia-link-navigation:hover {
     color: var(--base-color) !important;
   }
   .octicon-chevron-right, .help-link .octicon, g[fill="#0366D6"] {
@@ -283,6 +286,9 @@
   .lia-message-view-display.lia-list-row-thread-solved:before {
     border-top-color: var(--color-light-green) !important;
   }
+  .UserList .lia-list-row {
+    border-top-color: var(--color-444) !important;
+  }
   .lia-quilt-row-sub-header, .default-menu-option, .lia-autocomplete,
   .lia-autocomplete-container, .lia-menu-dropdown-items,
   .lia-common-dropdown-toggle,
@@ -321,12 +327,16 @@
   .lia-search-filter-bread-crumb-item .lia-search-filter-bread-crumb-link,
   .lia-nav-list li:hover > .lia-link-navigation,
   .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation:hover,
-  .featured-event:hover {
+  .featured-event:hover,
+  .lia-truncate-with-message-link .lia-truncated-message-link {
     background: var(--color-333) !important;
   }
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
   .user-navigation-settings-drop-down-inner > .lia-list-standard .lia-separator,
-  .user-navigation-settings-drop-down .dropdown-separator {
+  .user-navigation-settings-drop-down .dropdown-separator,
+  .lia-autocomplete-footer-inline:hover,
+  .lia-common-dropdown-menu .type-filter-alternative:hover,
+  .lia-common-dropdown-menu .SearchToggleFieldFilter:hover {
     background-color: var(--color-444) !important;
   }
   .lia-panel, .lia-panel-message, .lia-message-view-display,
@@ -394,7 +404,9 @@
   .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover,
   .lia-link-disabled:focus, .lia-truncated-body-container,
   .lia-content .xsmall-text, .lia-form-validation-help-text,
-  .lia-search-advanced-instructions-wrapper div, .mce-widget:hover .mce-txt {
+  .lia-search-advanced-instructions-wrapper div, .mce-widget:hover .mce-txt,
+  .lia-common-dropdown-menu .type-filter-alternative,
+  .lia-common-dropdown-menu .SearchToggleFieldFilter {
     color: var(--color-c0c0c0) !important;
   }
   .lia-content .add-tag-link, .mce-menu-item .mce-text {
