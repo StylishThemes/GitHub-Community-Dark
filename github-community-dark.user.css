@@ -362,7 +362,8 @@
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
   .user-navigation-settings-drop-down-inner > .lia-list-standard .lia-separator,
   .user-navigation-settings-drop-down .dropdown-separator,
-  .lia-autocomplete-footer-inline:hover, .lia-search-match-lithium {
+  .lia-autocomplete-footer-inline:hover, .lia-search-match-lithium,
+	.lia-search-input-wrapper .lia-autocomplete-footer {
     background-color: var(--color-444) !important;
   }
   .lia-panel, .lia-panel-message, .lia-message-view-display,
