@@ -263,7 +263,8 @@
   .BoardList .lia-list-row .boardTitleColumn {
     border-left: 1px solid var(--color-333) !important;
   }
-  .lia-quilt-reply-page .lia-panel-content {
+  .lia-quilt-reply-page .lia-panel-content,
+  .lia-message-view-display.lia-message-view-user-message {
     background: var(--color-222) !important;
     border: 1px solid var(--color-333) !important;
   }
@@ -336,9 +337,8 @@
   .UserList .lia-list-row, .lia-media-publishing-history {
     border-top-color: var(--color-444) !important;
   }
-  .lia-quilt-row-sub-header, .default-menu-option, .lia-autocomplete,
-  .lia-autocomplete-container, .lia-menu-dropdown-items,
-  .lia-common-dropdown-toggle,
+  .default-menu-option, .lia-autocomplete, .lia-autocomplete-container,
+  .lia-menu-dropdown-items, .lia-common-dropdown-toggle,
   .user-navigation-settings-drop-down-inner > .lia-list-standard,
   .lia-common-dropdown-menu, .ui-datepicker, .lia-token-input-dropdown,
   .lia-metadata-application-tool-panel, .lia-search-typeahead .dropdown-menu,
@@ -349,6 +349,11 @@
   .label-link, .lia-quilt-recent-posts-page .lia-message-view-wrapper,
   .lia-message-item.lia-message-item-reply {
     background-color: var(--color-222) !important;
+    color: var(--color-ddd) !important;
+    border-color: var(--color-444) !important;
+  }
+  .lia-quilt-row-sub-header {
+    background-color: var(--color-282828) !important;
     color: var(--color-ddd) !important;
     border-color: var(--color-444) !important;
   }
@@ -419,9 +424,8 @@
   .lia-search-input-wrapper .lia-autocomplete-footer {
     background-color: var(--color-444) !important;
   }
-  .lia-panel, .lia-panel-message, .lia-message-view-display,
-  .lia-tkb-article-summary-view, .lia-spoiler-container,
-  .lia-tkb-content-finder .lia-search-tag-filter,
+  .lia-panel, .lia-panel-message, .lia-tkb-article-summary-view,
+  .lia-spoiler-container, .lia-tkb-content-finder .lia-search-tag-filter,
   .lia-quilt-search-page > .lia-quilt-row-main, .lia-quilt-row-header,
   .lia-quilt-row-main, .lia-quilt-column-alley-single,
   .lia-tabs-standard-wrapper > .lia-tabs-standard, .lia-browser-category-heading,
