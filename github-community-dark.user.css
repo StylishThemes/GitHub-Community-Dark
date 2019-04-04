@@ -506,7 +506,8 @@
   .lia-faq-section-title-level-1 > .lia-link-navigation {
     color: var(--color-c0c0c0) !important;
   }
-  .lia-content .add-tag-link, .mce-menu-item .mce-text, .TagList ul li {
+  .lia-content .add-tag-link, .mce-menu-item .mce-text, .TagList ul li,
+  .lia-message-view-display .lia-message-item-metadata-side .lia-message-post-date:after {
     color: var(--color-949494) !important;
   }
   .TagDetailPage .lia-menu-dropdown-items > li > .lia-link-disabled,
