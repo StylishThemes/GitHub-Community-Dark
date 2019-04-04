@@ -461,7 +461,7 @@
     color: var(--color-ddd) !important;
   }
   blockquote {
-    border-color: var(--color-949494) !important;;
+    border-color: var(--color-949494) !important;
   }
   /* text color */
   h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
@@ -825,7 +825,7 @@
     filter: brightness(.8) !important;
   }
   .lia-faq-section-title-level-1 > .lia-link-navigation:before {
-    filter: grayscale(100%) brightness(300%)!important;
+    filter: grayscale(100%) brightness(300%) !important;
   }
   .lia-form-vertical .lia-media-image-upload-contents .lia-image-upload-icon,
   .lia-media-uploader-header-title-wrapper .lia-fa.lia-fa-camera,
