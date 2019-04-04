@@ -118,7 +118,7 @@
     --color-light-blue: #9daccc;
     --color-mid-blue: #246;
     --color-dark-blue: #182030;
-    --color-purple: #6633ff;
+    --color-purple: #63f;
     --color-transparent: transparent;
   }
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation),
@@ -154,9 +154,10 @@
   .lia-message-item-reply .lia-truncated-body-container,
   .lia-message-item-solution .lia-truncated-body-container,
   .lia-message-item-solution .lia-truncated-body-container:hover,
-  a.lia-faq-section-title, .lia-faq-description-close a.lia-faq-section-close:before,
-  .lia-faq-description-close a.lia-faq-section-close, .lia-autocomplete-list-even-row a,
-  .lia-autocomplete-list-odd-row a {
+  a.lia-faq-section-title,
+  .lia-faq-description-close a.lia-faq-section-close:before,
+  .lia-faq-description-close a.lia-faq-section-close,
+  .lia-autocomplete-list-even-row a, .lia-autocomplete-list-odd-row a {
     color: var(--base-color) !important;
   }
   /* user ranks - exclude style colors in above rule line #127 then add below */
