@@ -118,7 +118,7 @@
     --color-light-blue: #9daccc;
     --color-mid-blue: #246;
     --color-dark-blue: #182030;
-    --color-purple: :#6633ff;
+    --color-purple: #6633ff;
     --color-transparent: transparent;
   }
   a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation),
