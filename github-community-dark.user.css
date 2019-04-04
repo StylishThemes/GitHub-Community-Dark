@@ -477,6 +477,14 @@
   blockquote {
     border-color: var(--color-949494) !important;
   }
+  .lia-mentions-block-header {
+    background-color: var(--color-222) !important;
+    border-bottom: 1px solid var(--color-444) !important;
+  }
+  .lia-mentions-block:before {
+    background: var(--color-222) !important;
+    border-color: var(--color-444) var(--color-transparent) var(--color-transparent) var(--color-444) !important;
+  }
   /* text color */
   h1, h2, h3, h4, h5, h6, h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
   .lia-browser-category-heading .board-count, a.kudos-count-link span,
@@ -508,7 +516,16 @@
   .lia-search-advanced-instructions-wrapper div, .mce-widget:hover .mce-txt,
   .lia-common-dropdown-menu .type-filter-alternative,
   .lia-common-dropdown-menu .SearchToggleFieldFilter div,
-  .lia-faq-section-title-level-1 > .lia-link-navigation {
+  .lia-faq-section-title-level-1 > .lia-link-navigation,
+  .lia-autocomplete-content > ul > li,
+  .lia-autocomplete-content-inline > ul > li, .lia-autocomplete-footer,
+  .lia-autocomplete-footer-inline,
+  .lia-menu-dropdown-items .SearchToggleFieldFilter,
+  .user-navigation-settings-drop-down-inner > .lia-list-standard .SearchToggleFieldFilter,
+  .lia-menu-dropdown-items .type-filter-alternative,
+  .user-navigation-settings-drop-down-inner > .lia-list-standard .type-filter-alternative,
+  .lia-common-dropdown-menu .SearchToggleFieldFilter,
+  .lia-common-dropdown-menu .type-filter-alternative {
     color: var(--color-c0c0c0) !important;
   }
   .lia-content .add-tag-link, .mce-menu-item .mce-text, .TagList ul li,
