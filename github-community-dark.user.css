@@ -352,6 +352,11 @@
     color: var(--color-ddd) !important;
     border-color: var(--color-444) !important;
   }
+  .default-menu-option:hover, .lia-common-dropdown-toggle:hover {
+    background-color: var(--color-282828) !important;
+    color: var(--color-ddd) !important;
+    border-color: var(--color-444) !important;
+  }
   .lia-quilt-row-sub-header {
     background-color: var(--color-282828) !important;
     color: var(--color-ddd) !important;
@@ -507,7 +512,8 @@
     color: var(--color-c0c0c0) !important;
   }
   .lia-content .add-tag-link, .mce-menu-item .mce-text, .TagList ul li,
-  .lia-message-view-display .lia-message-item-metadata-side .lia-message-post-date:after {
+  .lia-message-view-display .lia-message-item-metadata-side .lia-message-post-date:after,
+  .default-menu-option:after, .lia-common-dropdown-toggle:after {
     color: var(--color-949494) !important;
   }
   .TagDetailPage .lia-menu-dropdown-items > li > .lia-link-disabled,
