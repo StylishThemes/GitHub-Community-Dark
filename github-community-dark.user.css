@@ -352,6 +352,10 @@
     color: var(--color-ddd) !important;
     border-color: var(--color-444) !important;
   }
+  .lia-truncated-message-link, .lia-truncate-spacer,
+  .lia-truncate-with-message-link:after {
+    background: var(--color-222) !important;
+  }
   .lia-message-view-display .default-menu-option,
   .lia-autocomplete > li > a:hover, .lia-autocomplete-container > li > a:hover,
   .lia-menu-dropdown-items > li > a:hover,
@@ -376,7 +380,6 @@
   .lia-nav-list li:hover > .lia-link-navigation,
   .lia-menu-user-dropdown .lia-menu-user-nav .lia-link-navigation:hover,
   .featured-event:hover,
-  .lia-truncate-with-message-link .lia-truncated-message-link,
   .lia-common-dropdown-menu .type-filter-alternative:hover,
   .lia-common-dropdown-menu .SearchToggleFieldFilter:hover,
   .lia-autocomplete-content > ul > li:hover,
@@ -405,7 +408,8 @@
   .lia-menu-dropdown-items .selected.type-filter-alternative,
   .user-navigation-settings-drop-down-inner > .lia-list-standard .selected.type-filter-alternative,
   .lia-common-dropdown-menu .selected.SearchToggleFieldFilter,
-  .lia-common-dropdown-menu .selected.type-filter-alternative {
+  .lia-common-dropdown-menu .selected.type-filter-alternative,
+  ul.lia-list-standard-inline a.label-link.lia-link-navigation {
     background: var(--color-333) !important;
   }
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
@@ -606,7 +610,8 @@
   }
   .lia-panel-content-wrapper .lia-panel-content .lia-list-standard,
   .lia-component-blogs-widget-latest-articles .lia-panel-content-wrapper,
-  .TagCloudTaplet .lia-panel-content-wrapper {
+  .TagCloudTaplet .lia-panel-content-wrapper,
+  .lia-component-tags-widget-my-tags .lia-panel-content-wrapper {
     border-left: 1px solid var(--color-333) !important;
     border-right: 1px solid var(--color-333) !important;
     border-bottom: 1px solid var(--color-333) !important;
