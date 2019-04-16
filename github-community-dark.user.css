@@ -121,7 +121,7 @@
     --color-purple: #63f;
     --color-transparent: transparent;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation),
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation):not(.nav-link),
   .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after,
   a.page-link.lia-link-navigation, a.lia-link-navigation.lia-message-unread,
   a.lia-user-name-link:not([style*="color:#009900"]):not([style*="color:#6633FF"]),
