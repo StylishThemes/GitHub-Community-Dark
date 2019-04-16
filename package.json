@@ -1,7 +1,7 @@
 {
   "name": "github-community-dark",
   "title": "GitHub Community Dark",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "description": "Darker GitHub Community",
   "license": "CC-BY-SA-4.0",
   "repository": "StylishThemes/GitHub-Community-Dark",
@@ -13,25 +13,24 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-silverwind": "^2.1.0",
-    "fs-extra": "^7.0.1",
     "perfectionist": "^2.4.0",
-    "semver": "^6.0.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-standard": "^18.2.0",
-    "updates": "^8.0.0"
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
+    "updates": "^8.0.1",
+    "ver": "^4.2.0"
   },
   "scripts": {
     "authors": "bash tools/authors",
     "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "major": "node tools/bump-version.js major && git add . && npm version -f major",
-    "minor": "node tools/bump-version.js minor && git add . && npm version -f minor",
-    "patch": "node tools/bump-version.js patch && git add . && npm version -f patch",
-    "perfectionist": "perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "stylelint --silent --color -- github-community-dark.user.css",
+    "patch": "npx ver -p patch github-community-dark.user.css",
+    "minor": "npx ver -p minor github-community-dark.user.css",
+    "major": "npx ver -p major github-community-dark.user.css",
+    "perfectionist": "npx perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "npx stylelint --silent --color -- github-community-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "updates -cu && npm install",
+    "update": "npx updates -cu && npm install",
     "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
   }
 }
