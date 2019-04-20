@@ -157,7 +157,8 @@
   a.lia-faq-section-title,
   .lia-faq-description-close a.lia-faq-section-close:before,
   .lia-faq-description-close a.lia-faq-section-close,
-  .lia-autocomplete-list-even-row a, .lia-autocomplete-list-odd-row a {
+  .lia-autocomplete-list-even-row a, .lia-autocomplete-list-odd-row a,
+  .BreadCrumb.crumb-line.lia-breadcrumb.lia-component-common-widget-breadcrumb a {
     color: var(--base-color) !important;
   }
   /* user ranks - exclude style colors in above rule line #127 then add below */
@@ -980,5 +981,10 @@
     color: var(--color-ddd) !important;
     background-color: var(--color-261d08) !important;
     border-color: var(--color-542) !important;
+  }
+  /* Tags add border and tweak padding ala Github-Dark  */
+  .lia-tag-list-item {
+    padding: .03em .8em !important;
+    box-shadow: inset 0 0 0 1px var(--color-mid-blue) !important;
   }
 }
