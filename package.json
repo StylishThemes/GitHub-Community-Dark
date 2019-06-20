@@ -28,7 +28,7 @@
     "minor": "npx ver -p minor github-community-dark.user.css",
     "major": "npx ver -p major github-community-dark.user.css",
     "perfectionist": "npx perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --silent --color -- github-community-dark.user.css",
+    "stylelint": "npx stylelint --quiet --color -- github-community-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
     "update": "npx updates -cu && npm install",
     "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
