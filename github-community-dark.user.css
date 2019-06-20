@@ -856,7 +856,7 @@
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
   .kudos-link:before, .lia-img-icon-forum-thread:before, .featured-event img,
-  .ui-dialog-titlebar-close {
+  .ui-dialog-titlebar-close, img[alt*="value your feedback"] {
     filter: invert(80%) !important;
   }
   .lia-message-image-wrapper img {
