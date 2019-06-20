@@ -228,7 +228,8 @@
   .mce-widget.mce-btn {
     color: var(--color-fff) !important;
   }
-  .lia-panel .lia-panel-heading-bar, .lia-spoiler-container .lia-spoiler-link {
+  .lia-panel .lia-panel-heading-bar, .lia-spoiler-container .lia-spoiler-link,
+  .lia-body .mce-window, .lia-panel-dialog, .ui-dialog {
     background-color: var(--color-222) !important;
     border-bottom: 1px solid var(--color-transparent) !important;
     border-color: var(--color-444) !important;
@@ -295,7 +296,8 @@
     background-image: none !important;
     color: var(--color-fff) !important;
   }
-  .lia-media-uploader-body-tab-content {
+  .lia-media-uploader-body-tab-content,
+  .lia-dialog-titleless .ui-dialog-titlebar {
     background-color: var(--color-333) !important;
     border-top: 1px solid var(--color-444) !important;
   }
@@ -853,7 +855,8 @@
   }
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
-  .kudos-link:before, .lia-img-icon-forum-thread:before, .featured-event img {
+  .kudos-link:before, .lia-img-icon-forum-thread:before, .featured-event img,
+  .ui-dialog-titlebar-close {
     filter: invert(80%) !important;
   }
   .lia-message-image-wrapper img {
