@@ -109,6 +109,7 @@
     --color-green: #163;
     --color-light-green: #55a532;
     --color-dark-green: #041;
+    --color-dark-green-rgb: rgba(0, 68, 17, .2);
     --color-dark-red: #300;
     --color-bright-red: #f44;
     --color-hot-pink: #c7254e;
@@ -121,7 +122,7 @@
     --color-purple: #63f;
     --color-transparent: transparent;
   }
-  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation):not(.nav-link),
+  a:not(.lia-button):not(.dropdown-toggle):not(.default-menu-option):not(.lia-component-go-to-solution-link):not(.category-title):not(.lia-content):not(.xsmall-text):not(.lia-custom-event):not(.lia-link-navigation):not(.nav-link):not(#dropdown),
   .lia-component-quilt-search-page-thread-filters .lia-common-dropdown-toggle:after,
   a.page-link.lia-link-navigation, a.lia-link-navigation.lia-message-unread,
   a.lia-user-name-link:not([style*="color:#009900"]):not([style*="color:#6633FF"]),
@@ -258,7 +259,7 @@
   .mce-floatpanel.mce-popover, .mce-panel.mce-menu, .CommentEditorForm,
   .lia-list-slim[role="presentation"],
   .lia-quilt-row-main .lia-panel-heading-bar, .lia-panel.advancedSearchPanel,
-  .featured-event, .lia-component-author-rank {
+  .featured-event {
     background: var(--color-222) !important;
     border: 1px solid var(--color-333) !important;
   }
@@ -346,10 +347,9 @@
   .lia-common-dropdown-menu, .ui-datepicker, .lia-token-input-dropdown,
   .lia-metadata-application-tool-panel, .lia-search-typeahead .dropdown-menu,
   .mce-tinymce-inline.mce-container, .Box, .lia-quilt-user-search-item,
-  .t-data-grid, .lia-quilt-row-footer,
-  .lia-accepted-solution .lia-quilt-forum-message .lia-quilt-row-footer,
-  .lia-quilt-user-profile-statistics, .lia-component-quilt-community-hero,
-  .label-link, .lia-quilt-recent-posts-page .lia-message-view-wrapper,
+  .t-data-grid, .lia-quilt-row-footer, .lia-quilt-user-profile-statistics,
+  .lia-component-quilt-community-hero, .label-link,
+  .lia-quilt-recent-posts-page .lia-message-view-wrapper,
   .lia-message-item.lia-message-item-reply {
     background-color: var(--color-222) !important;
     color: var(--color-ddd) !important;
@@ -428,8 +428,7 @@
   .lia-menu-dropdown-items .lia-separator, .label .label-count,
   .user-navigation-settings-drop-down-inner > .lia-list-standard .lia-separator,
   .user-navigation-settings-drop-down .dropdown-separator,
-  .lia-autocomplete-footer-inline:hover, .lia-search-match-lithium,
-  .lia-search-input-wrapper .lia-autocomplete-footer {
+  .lia-autocomplete-footer-inline:hover, .lia-search-match-lithium {
     background-color: var(--color-444) !important;
   }
   .lia-panel, .lia-panel-message, .lia-tkb-article-summary-view,
@@ -513,11 +512,10 @@
   .lia-metadata-application-tool-panel > li > a,
   .lia-search-typeahead .dropdown-menu > li > a,
   .mce-tinymce-inline.mce-container > li > a, .lia-component-author-rank,
-  .lia-paging-full .lia-link-disabled, a.lia-link-disabled:hover,
-  .lia-link-disabled:focus, .lia-truncated-body-container,
-  .lia-content .xsmall-text, .lia-form-validation-help-text,
-  .lia-search-advanced-instructions-wrapper div, .mce-widget:hover .mce-txt,
-  .lia-common-dropdown-menu .type-filter-alternative,
+  a.lia-link-disabled:hover, .lia-link-disabled:focus,
+  .lia-truncated-body-container, .lia-content .xsmall-text,
+  .lia-form-validation-help-text, .lia-search-advanced-instructions-wrapper div,
+  .mce-widget:hover .mce-txt, .lia-common-dropdown-menu .type-filter-alternative,
   .lia-common-dropdown-menu .SearchToggleFieldFilter div,
   .lia-faq-section-title-level-1 > .lia-link-navigation,
   .lia-autocomplete-content > ul > li,
@@ -549,8 +547,8 @@
   .lia-paging-full-pages .lia-paging-page-ellipsis > .lia-link-disabled:focus {
     background-color: var(--color-transparent) !important;
     border-color: var(--color-transparent) !important;
-    color: var(--color-aaa) !important;
-    opacity: .6 !important;
+    color: var(--color-c0c0c0) !important;
+    opacity: .7 !important;
   }
   .lia-paging-full-pages li > .lia-link-disabled,
   .lia-paging-full-pages li > .lia-link-disabled:hover,
@@ -589,7 +587,11 @@
   .lia-data-cell-secondary .lia-component-messages-column-contributors,
   .lia-data-cell-secondary .lia-component-messages-column-message-replies-count,
   a.lia-link-navigation.lia-replies-count-link,
-  .lia-link-navigation.kudos-count-link.lia-link-disabled {
+  .lia-link-navigation.kudos-count-link.lia-link-disabled,
+  .lia-panel-feedback-banner-note .lia-link-navigation,
+  .lia-component-tag-banner .lia-link-navigation,
+  .lia-panel-status-banner-note .lia-link-navigation,
+  .lia-quilt-column-feedback .lia-component-common-widget-page-information .lia-link-navigation {
     color: var(--color-aaa) !important;
   }
   /* Borders */
@@ -859,7 +861,8 @@
   .ui-dialog-titlebar-close, img[alt*="value your feedback"] {
     filter: invert(80%) !important;
   }
-  .lia-message-image-wrapper img {
+  .lia-message-image-wrapper img, .lia-fa.lia-fa-forum::before,
+  .lia-fa.lia-fa-thread.lia-fa-forum::before {
     filter: brightness(.8) !important;
   }
   .lia-faq-section-title-level-1 > .lia-link-navigation:before {
@@ -911,7 +914,8 @@
     background-color: var(--color-transparent) !important;
   }
   .lia-menu-user-dropdown .lia-link-navigation:before,
-  .lia-slide-menu-content .view-profile-link:before {
+  .lia-slide-menu-content .view-profile-link:before,
+  .search-header-descending::before {
     color: var(--color-949494) !important;
   }
   .lia-quilt-view-profile-hero {
@@ -931,6 +935,10 @@
     background-color: var(--color-dark-green) !important;
     border-color: var(--color-green) !important;
     color: var(--color-light-green) !important;
+  }
+  .lia-accepted-solution .lia-quilt-forum-message,
+  .lia-accepted-solution .lia-quilt-forum-message .lia-quilt-row-footer {
+    background-color: var(--color-dark-green-rgb) !important;
   }
   .lia-accepted-solution .lia-quilt-forum-message {
     border-color: var(--color-dark-green) !important;
@@ -958,6 +966,9 @@
   }
   .lia-tag-list-item {
     background: var(--color-dark-blue) !important;
+  }
+  .lia-form-error-text {
+    color: var(--color-bright-red);
   }
   /* Messages banners */
   .InfoMessage {
