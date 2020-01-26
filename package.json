@@ -21,7 +21,7 @@
   },
   "scripts": {
     "authors": "bash tools/authors",
-    "clean": "npm run perfectionist && node tools/fix-perfectionist.js",
+    "clean": "npm run perfectionist && node tools/clean.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
     "patch": "npx ver -p patch github-community-dark.user.css",
