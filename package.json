@@ -24,13 +24,13 @@
     "clean": "npm run perfectionist && node tools/clean.js",
     "eslint": "eslint --quiet --color tools/*.js",
     "lint": "npm run eslint && npm run stylelint",
-    "patch": "npx ver -p patch github-community-dark.user.css",
-    "minor": "npx ver -p minor github-community-dark.user.css",
-    "major": "npx ver -p major github-community-dark.user.css",
-    "perfectionist": "npx perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
-    "stylelint": "npx stylelint --quiet --color -- github-community-dark.user.css",
+    "patch": "versions -p -C patch github-community-dark.user.css",
+    "minor": "versions -p -C minor github-community-dark.user.css",
+    "major": "versions -p -C major github-community-dark.user.css",
+    "perfectionist": "perfectionist github-community-dark.user.css github-community-dark.user.css --indentSize 2 --maxAtRuleLength 250",
+    "stylelint": "stylelint --quiet --color -- github-community-dark.user.css",
     "test": "npm run eslint && npm run stylelint",
-    "update": "npx updates -cu && npm install",
+    "update": "updates -cu && npm install",
     "usercss": "node tools/add-themes.js && node tools/update-usercss.js"
   }
 }
