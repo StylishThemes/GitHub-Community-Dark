@@ -18,7 +18,7 @@ async function getThemesInFolder() {
     return a.localeCompare(b);
   });
 
-  return await Promise.all(files.map(file => fs.readFile(themes + "/" + file, "utf8")));
+  return await Promise.all(files.map(file => fs.readFile(`${themes}/${file}`, "utf8")));
 }
 
 function extractThemeName(css) {
@@ -43,5 +43,5 @@ function updateDefaults(themes) {
 
 getThemesInFolder()
   .then(themes => fs.writeFile(path.join(__dirname, "..", "defaults.json"), updateDefaults(themes)))
-  .then(() => console.log("\x1b[32m%s\x1b[0m", "Themes updated in defaults.json"))
+  .then(() => console.info("\u001B[32m%s\u001B[0m", "Themes updated in defaults.json"))
   .catch(exit);
