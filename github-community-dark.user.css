@@ -868,6 +868,11 @@
   .lia-faq-section-title-level-1 > .lia-link-navigation:before {
     filter: grayscale(100%) brightness(300%) !important;
   }
+  .lia-notification-kudos .lia-notification-feed-icon::before {
+    color: var(--base-color);
+    content: "\f087";
+    font: normal normal normal 38px/1 FontAwesome;
+  }
   .lia-form-vertical .lia-media-image-upload-contents .lia-image-upload-icon,
   .lia-media-uploader-header-title-wrapper .lia-fa.lia-fa-camera,
   .lia-media-uploader-tab-list .lia-fa.lia-fa-camera,
