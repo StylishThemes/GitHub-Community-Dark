@@ -857,9 +857,9 @@
   }
   /* Images */
   #header-wrapper img, .lia-fa-icon, .lia-vitality-display:before,
-  .kudos-link:before, .lia-img-icon-forum-thread:before, .featured-event img,
+  .kudos-link:before, .lia-img-icon-forum-thread:before,
   .ui-dialog-titlebar-close, img[alt*="value your feedback"] {
-    filter: invert(80%) !important;
+    filter: invert(80%);
   }
   .lia-message-image-wrapper img, .lia-fa.lia-fa-forum::before,
   .lia-fa.lia-fa-thread.lia-fa-forum::before {
