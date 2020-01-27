@@ -873,6 +873,9 @@
     content: "\f087";
     font: normal normal normal 38px/1 FontAwesome;
   }
+  .lia-notification-rank .lia-notification-feed-icon::before {
+    color: var(--base-color);
+  }
   .lia-form-vertical .lia-media-image-upload-contents .lia-image-upload-icon,
   .lia-media-uploader-header-title-wrapper .lia-fa.lia-fa-camera,
   .lia-media-uploader-tab-list .lia-fa.lia-fa-camera,
@@ -989,9 +992,6 @@
   .lia-notification-feed-item {
     background-color: var(--color-222) !important;
     border: 1px solid var(--color-444) !important;
-  }
-  .lia-notification-rank .lia-notification-feed-icon:before {
-    color: var(--color-blue) !important;
   }
   .lia-notification-unread .lia-quilt-notification-feed-item {
     border-left: 6px solid var(--color-blue) !important;
