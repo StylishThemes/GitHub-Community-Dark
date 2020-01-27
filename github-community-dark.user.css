@@ -876,6 +876,9 @@
   .lia-notification-rank .lia-notification-feed-icon::before {
     color: var(--base-color);
   }
+  .blockUI.blockOverlay {
+    background-color: #111 !important;
+  }
   .lia-form-vertical .lia-media-image-upload-contents .lia-image-upload-icon,
   .lia-media-uploader-header-title-wrapper .lia-fa.lia-fa-camera,
   .lia-media-uploader-tab-list .lia-fa.lia-fa-camera,
