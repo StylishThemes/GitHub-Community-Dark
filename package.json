@@ -22,9 +22,9 @@
   },
   "scripts": {
     "authors": "bash tools/authors",
+    "themes": "node tools/add-themes.js",
     "clean": "npm run perfectionist && node tools/clean.js",
-    "eslint": "eslint tools/*.js",
-    "lint": "npm run eslint && npm run stylelint",
+    "lint": "eslint tools/*.js && stylelint github-community-dark.user.css themes",
     "patch": "versions -p -C patch github-community-dark.user.css",
     "minor": "versions -p -C minor github-community-dark.user.css",
     "major": "versions -p -C major github-community-dark.user.css",
