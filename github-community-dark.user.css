@@ -186,6 +186,9 @@
   .BreadCrumb.crumb-line.lia-breadcrumb.lia-component-common-widget-breadcrumb a {
     color: var(--base-color) !important;
   }
+  .lia-message-view-display .lia-message-subject .lia-link-navigation {
+    color: var(--base-color);
+  }
   /* user ranks - exclude style colors in above rule line #127 then add below */
   .lia-user-rank-Moderator a.lia-page-link.lia-user-name-link span.login-bold,
   .lia-user-rank-Moderator a.lia-page-link.lia-user-name-link span.login-bold:hover {
@@ -261,7 +264,7 @@
     color: var(--color-ddd) !important;
   }
   .lia-decoration-border .lia-panel-heading-bar-wrapper .lia-panel-heading-bar {
-    background-color: var(--color-181818) !important;
+    background-color: var(--color-181818);
   }
   .lia-panel, .lia-panel-message, .lia-message-view-display,
   .lia-tkb-article-summary-view, .lia-spoiler-container,
@@ -281,11 +284,17 @@
     font-weight: 400;
   }
   .mce-floatpanel.mce-popover, .mce-panel.mce-menu, .CommentEditorForm,
-  .lia-list-slim[role="presentation"],
-  .lia-quilt-row-main .lia-panel-heading-bar, .lia-panel.advancedSearchPanel,
+  .lia-list-slim[role="presentation"], .lia-panel.advancedSearchPanel,
   .featured-event {
     background: var(--color-222) !important;
     border: 1px solid var(--color-333) !important;
+  }
+  .lia-quilt-row-main .lia-panel-heading-bar {
+    background: var(--color-222);
+    border-color: var(--color-333);
+  }
+  .lia-panel:not(.lia-component-forums-widget-recent-threads) .lia-panel-heading-bar {
+    border: 1px solid var(--color-444);
   }
   .BoardList .lia-list-row .boardTitleColumn {
     border-left: 1px solid var(--color-333) !important;
@@ -516,7 +525,6 @@
   .lia-browser-category-heading .board-count, a.kudos-count-link span,
   .lia-browser-category-heading .category-title, .final-crumb span,
   .category-title.lia-link-disabled:hover, .PageTitle .lia-link-disabled:hover,
-  .lia-message-view-display .lia-message-subject a.lia-link-navigation,
   .lia-tabs-standard > li > span > a, .mce-window-head .mce-title,
   .lia-media-image-upload-title, .lia-message-read .lia-message-subject,
   .lia-paging-page-previous > .lia-link-navigation::before,
@@ -527,6 +535,9 @@
   .blog-articles .lia-thread-topic .MessageSubject a.page-link.lia-link-navigation.lia-custom-event:hover,
   .tagNestedScope .lia-list-standard-inline a.lia-link-navigation {
     color: var(--color-ddd) !important;
+  }
+  .lia-message-view-display .lia-message-subject a.lia-link-navigation {
+    color: var(--color-ddd);
   }
   .lia-component-quilt-header a, .lia-forum-topic-page-reply-count,
   .lia-autocomplete > li > a, .lia-autocomplete-container > li > a,
@@ -621,7 +632,6 @@
   /* Borders */
   .border-top, .lia-panel, .lia-thread-reply .lia-quilt-forum-message,
   .lia-component-author-rank, .lia-button-image-kudos-count,
-  .lia-panel .lia-panel-heading-bar,
   .lia-panel-content > .lia-list-standard > li, .lia-quilt-column-common-header,
   .lia-tabs-standard, .lia-dropdown-open .lia-common-dropdown-toggle,
   .dropdownHover .default-menu-option,
@@ -631,6 +641,9 @@
   .lia-faq-section-title:not(.lia-link-navigation) {
     border-color: var(--color-333) !important;
   }
+  .lia-panel .lia-panel-heading-bar {
+    border-color: var(--color-333);
+  }
   .lia-quilt-blog-message > .lia-quilt-row-header,
   .lia-quilt-blog-topic-message > .lia-quilt-row-header {
     border-bottom: 1px solid var(--color-333) !important;
@@ -639,7 +652,8 @@
     border-top: 0 !important;
   }
   .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow,
-  .lia-quilt-layout-contest-message-story .lia-quilt-row-main-title {
+  .lia-quilt-layout-contest-message-story .lia-quilt-row-main-title,
+  .lia-welcome h2[style*="border-bottom:1px solid #dfe2e5"] {
     border-bottom-color: var(--color-444) !important;
   }
   .mce-floatpanel.mce-popover.mce-bottom > .mce-arrow::after {
@@ -1001,6 +1015,11 @@
   }
   .lia-tag-list-item {
     background: var(--color-dark-blue) !important;
+  }
+  .gh-flash {
+    background-color: var(--color-dark-blue);
+    color: var(--base-color);
+    border-color: var(--color-mid-blue);
   }
   .lia-form-error-text {
     color: var(--color-bright-red);
